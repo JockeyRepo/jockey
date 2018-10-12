@@ -18,6 +18,12 @@ cd electron-quick-start
 npm install
 # Run the app
 npm start
+
+## Gulp
+
+# Just gulp It
+gulp
+
 ```
 ## Future Plans
 
