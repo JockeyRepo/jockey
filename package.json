@@ -1,0 +1,24 @@
+{
+  "name": "jockey",
+  "version": "0.0.1",
+  "description": "seamlessly request music to any event",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/spookyvert/jockey",
+  "author": "@spookyvert, @char, @belierjavier",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.0",
+    "gulp-electron": "^0.1.3",
+    "gulp-html-beautify": "^1.0.1",
+    "browser-sync": "^2.24.5",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
