@@ -11,16 +11,16 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/spookyvert/jockey
 # Go into the repository
-cd electron-quick-start
+cd jockey
 # Install dependencies
 npm install
 # Run the app
 npm start
 
 # Gulp
-gulp
+gulp dev
 
 ```
 ## Future Plans
