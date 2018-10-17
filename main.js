@@ -8,9 +8,11 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 1200, height: 900})
+  BrowserWindow({icon:'assets/images/logo.png'});
 
   /* this hides the menu */
-  //mainWindow.setMenu(null);
+  mainWindow.setMenu(null);
+
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
