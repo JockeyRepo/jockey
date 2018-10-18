@@ -148,6 +148,10 @@ ul {
     list-style: none;
 }
 
+#social-export{
+    font-size: 2em;
+}
+
 blockquote,
 q {
     quotes: none;
@@ -166,7 +170,18 @@ table {
     border-spacing: 0;
 }
 
-
+.fa-instagram{
+    color: pink;
+}
+.fa-facebook{
+    color: #3B5998;
+}
+.fa-twitter{
+    color: #00C6FF;
+}
+.btn-contact{
+    margin-top: 0px !important;
+}
 /* --- Common Styles ---*/
 
 h1 {

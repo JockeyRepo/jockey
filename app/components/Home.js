@@ -27,8 +27,7 @@ export default class Home extends Component < Props > {
                                 <br class="visible-lg"/> that's all!</p>
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
-                            <a href="qr/index.html" class="btn-contact wow fadeInDown" >Generate QR Code</a>
-                            <Link to={routes.COUNTER} className="btn-contact wow fadeInDown" >to Counter</Link>
+                            <Link to={routes.COUNTER} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
                             
                         </div>
                     </div>
