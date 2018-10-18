@@ -20,14 +20,19 @@ render() {
                         <div class="intro">
                             <div class="intro-text">
                                 <h4 class="wow fadeInDown" data-wow-delay="0.4s">What is Jockey?</h4>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s"> a super amazing tool to seamlessly request music to host!
+                                <p class="wow fadeInDown" data-wow-delay="0.6s"> a super amazing tool to seamlessly request music to any event!
                                 </p>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s">Put the Name of your event in the title<br class="visible-lg "/> and export your custom QR!
+                                <p class="wow fadeInDown" data-wow-delay="0.6s">To get started Login or make an account! </p>
+                                <p class="wow fadeInDown" data-wow-delay="0.6s">You won't be disappointed 🙏
                                     <br class="visible-lg"/> </p>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s">Make sure you write down your pin for users, <br class="visible-lg "/> safety first!
-                                    <br class="visible-lg"/> </p>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s">We'll do everything else. ??</p>
-                                <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
+                                        <ul>
+                                        <div class="row">
+                                        
+          <li class="twitter"><i class="fa fa-twitter twitter-i" ></i></li>
+
+
+          </div>
+          </ul>
                             </div>
                         </div>
                     </div>

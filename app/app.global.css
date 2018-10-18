@@ -242,24 +242,25 @@ h1 {
 
 /* glow */
 
-ul li:hover.facebook {
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+/*github*/
+.wrapper ul li:hover.github .github-i {
+  color: #6e5494 !important;
+
 }
 
-ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+.wrapper ul li:hover .fa-github .github-i {
+  color: #6e5494 !important; 
+  text-shadow: 0 0 15px #6e5494 !important;
+  transition: all 0.5s ease !important;
 }
 
 /*twitter*/
-ul li:hover.twitter {
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+.wrapper ul li:hover.twitter {
+  color: #00aced;
+
 }
 
-ul li:hover .fa-twitter {
+.wrapper ul li:hover .fa-twitter {
   color: #00aced;
   text-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
@@ -277,7 +278,7 @@ ul li:hover .fa-instagram {
   transition: all 0.5s ease;
 }
 
-/* google */
+/* youtube */
 .wrapper ul li.youtube 
 .youtube-i{
   color: #ff0000;
@@ -397,6 +398,19 @@ input[type=file] {
     padding: 3px;
 
 }
+.twitter-i {
+    font-size: 1.5em !important;
+    padding: 3px;
+
+}
+
+.github-i {
+    font-size: 1.5em !important;
+    padding: 3px;
+
+}
+
+
 
 .links {
     float: right;
@@ -433,7 +447,7 @@ html * {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icons {
+.icons-qr {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -456,7 +470,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
     font-family: Poppins;
 }
 
