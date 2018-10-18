@@ -13,7 +13,7 @@ export default class Home extends Component < Props > {
     return (
 
       <div class="wrapper">
-      
+
         <div class="main">
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
@@ -38,28 +38,46 @@ export default class Home extends Component < Props > {
                     <div class="intro-right intro">
                         <div class="intro-text">
                             <h4 class="wow fadeInDown" data-wow-delay="0.4s">Current Requests</h4>
-                            <div class="request-box wow " data-wow-delay=" 0.6s">
-                                <ol id="queuebox" class="request-box-ol">
-                                    <li class="request-box-li">
-                                        <div class="song-tab">
-                                            <p class="song-tab-i">Travis Scott - Sicko Mode <span class="links">
-                <i class="fa fa-spotify spotify-i" ></i>
-                <i class="fa fa-youtube youtube-i" ></i>
-                </span></p>
-                                        </div>
-                                        <div class="song-tab">
-                                            <p class="song-tab-i">Lil - Pump <span class="links">
-                <i class="fa fa-spotify spotify-i" ></i>
-                <i class="fa fa-youtube youtube-i" ></i>
-                </span></p>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </div>
+                            <div class="wow fadeInDown" data-wow-delay=" 0.6s">
+
+<div class="song-box">
+  <div class="song-list">
+    <div class="song">
+      <div class="song-container"><img class="song-cover" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg"/>
+        <div class="song-title">
+          <div class="song-title-name">Sicko Mode</div>
+          <div class="song-title-meta">Travis Scott</div>
+        </div>
+        <div class="song-share">
+          <i class="fa fa-spotify spotify-i" ></i>
+          <i class="fa fa-youtube youtube-i" ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="song-box">
+  <div class="song-list">
+    <div class="song">
+      <div class="song-container"><img class="song-cover" src="https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg"/>
+        <div class="song-title">
+          <div class="song-title-name">I Love Kanye</div>
+          <div class="song-title-meta">Kanye West</div>
+        </div>
+        <div class="song-share">
+          <i class="fa fa-spotify spotify-i" ></i>
+          <i class="fa fa-youtube youtube-i" ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+                            
                         </div>
                     </div>
-                    <div class="footer-personal text-center wow fadeInDown" data-wow-delay="0.7s">
-                    </div>
+                   
                 </section>
             </section>
         </div>

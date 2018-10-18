@@ -1,13 +1,13 @@
 /* ---------------------------
 ------- Recon CSS File -------
------------------------------*/
+----------------------------- */
 
 
-/*--------------
+/* --------------
 All Contents
---------------*/
+-------------- */
 
-/*-----------------
+/* -----------------
 1. Reset.css
 2. Helper Classes
 3. Hamburger Menu Styling
@@ -19,10 +19,10 @@ All Contents
 9. Portfolio Single
 10. Contact Page Styling
 11. All Media Queries
-------------------*/
+------------------ */
 
 
-/*----- 1. Reset.css -----*/
+/* ----- 1. Reset.css ----- */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -147,8 +147,8 @@ body {
 #title-bar {
     -webkit-app-region: drag;
     height: 32px;   
-    padding: 0px;
-    margin: 0px;  
+    padding: 0;
+    margin: 0;  
     color: #ADADAD;
     font-family: sans-serif;
     z-index: 1000;
@@ -156,7 +156,7 @@ body {
 
 #title {
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 12px; 
     line-height: 32px;
     font-size: 14px;
@@ -167,7 +167,7 @@ body {
     -webkit-app-region: no-drag;
     position: fixed;
     top: 1px;
-    right: 0px; 
+    right: 0; 
     z-index: 1000;
 }
 
@@ -230,14 +230,84 @@ table {
     color: #00C6FF;
 }
 .btn-contact{
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     text-decoration: none !important;
 }
-/* --- Common Styles ---*/
+
+/* --- Common Styles --- */
 
 h1 {
     font-size: 16px;
 }
+
+
+
+/*  */
+
+.song-box {
+  max-width: 468px;
+  width: 100%;
+  margin: 0 auto;
+  background: #232342;
+  overflow: hidden;
+}
+
+.song-list .song {
+  background-color: white;
+}
+
+.song-list .song-progress {
+  height: 6px;
+  background-color: #232342;
+  transform-origin: 0 center;
+}
+
+.song-list .song-container {
+  display: flex;
+  height: 5em;
+}
+
+.song-list .song .song-cover {
+  height: 100%;
+}
+
+.song-list .song .song-title {
+  background-color: #21242b;
+  font-family: "Roboto", sans-serif;
+  flex: 1 1 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  text-align: left;
+}
+
+.song-title-meta{
+    font-weight: 200;
+    font-size: .75em;
+    line-height: 20px;
+}
+
+.song-list .song .song-title .song-title-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.song-list .song .song-share {
+  min-width: 5em;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color:#21242b;
+}
+
+
+
+
+
+
+/* */
 
 .request-box {
     background-color: #21242b;
@@ -251,6 +321,7 @@ h1 {
 .spotify-i {
     color: green !important;
     font-size: 1.5em !important;
+    padding: 3px;
 
 }
 
@@ -275,7 +346,6 @@ h1 {
 .youtube-i {
     color: red !important;
     font-size: 1.5em !important;
-    margin: 15px 10px 15px 10px !important;
 
 }
 
@@ -284,7 +354,7 @@ h1 {
     margin: 15px 10px 15px 10px !important;
 }
 
-/*----- Helper Classes -----*/
+/* ----- Helper Classes ----- */
 
 html * {
     -webkit-font-smoothing: antialiased;
@@ -421,7 +491,7 @@ h6 {
 
 /* -------------------------------------------------
 --------------- 3.Home Page Styling Starts -----------
----------------------------------------------------*/
+--------------------------------------------------- */
 
 .main {
     width: 100%;
@@ -432,7 +502,7 @@ h6 {
 
 /* --------------------------------------------------------
 -------------- Top Fixed Navigation Styling ---------------
-----------------------------------------------------------*/
+---------------------------------------------------------- */
 .top-nav {
     position: absolute;
     top: 30px;
@@ -513,7 +583,7 @@ h6 {
 
 /* --------------------------------------------------
 ---------- Hamburger and Navigation Starts ----------
-----------------------------------------------------*/
+---------------------------------------------------- */
 
 
 .nav-trigger {
@@ -599,11 +669,11 @@ h6 {
     transform: translate3d(-4px, 2px, 0) rotateZ(45deg);
 }
 
-/*-----------------------------------------------------
+/* -----------------------------------------------------
 ----------- Hamburger Menu Styling Ends ---------------
-------------------------------------------------------*/
+------------------------------------------------------ */
 
-/* ------ Nav Menu Styling -----*/
+/* ------ Nav Menu Styling ----- */
 
 #nav-menu {
     position: fixed;
@@ -695,7 +765,7 @@ h6 {
 }
 
 
-/* ----- Dimming Main Content When Navigation is Active -----*/
+/* ----- Dimming Main Content When Navigation is Active ----- */
 
 .main::before {
     display: block;
@@ -814,11 +884,11 @@ h6 {
 
 /* --------------------------------------------------
 ------------ Hamburger and Navigation Ends ----------
-----------------------------------------------------*/
+---------------------------------------------------- */
 
 /* --------------------------------------------------
 ------ Homepage Split Layout Styling Starts ---------
----------------------------------------------------*/
+--------------------------------------------------- */
 
 
 .left-section {
@@ -959,7 +1029,7 @@ h6 {
 
 /* ----------------------------------------------------
 -------------- About Page Styling Starts --------------
-------------------------------------------------------*/
+------------------------------------------------------ */
 
 
 .about {
@@ -1000,7 +1070,7 @@ h6 {
   font-weight: 400;
   color: #222222;
   line-height: 1.4;
-}*/
+} */
 
 .about-details .work-list {
     padding: 10px 0 0 0;
@@ -1112,7 +1182,7 @@ h6 {
 
 /* ----------------------------------------------------
 ----------- Portfolio Filter Styling Starts -----------
------------------------------------------------------*/
+----------------------------------------------------- */
 
 
 .portfolio-intro {
@@ -1255,9 +1325,9 @@ h6 {
 /* ----- Portfolio Filter Styling Ends ----- */
 
 
-/*-----------------------------------------------------
+/* -----------------------------------------------------
 ------------ Project Single Styling Starts ------------
-------------------------------------------------------*/
+------------------------------------------------------ */
 
 .project-single {
     padding: 150px 0 0 0;
@@ -1419,10 +1489,10 @@ h6 {
 
 /* -----------------------------------------------
 ----------- Project Single Styling End -----------
--------------------------------------------------*/
+------------------------------------------------- */
 
 
-/* ------------ Contact Form Styling --------*/
+/* ------------ Contact Form Styling -------- */
 
 .contact-section {
     width: 100%;
@@ -1640,7 +1710,7 @@ label {
 
 
 
-/*----------------------------------------------------
+/* ----------------------------------------------------
 ------------- All ------------------------------------
 --------------------- Media --------------------------
 ------------------------------- Queries --------------
@@ -1776,4 +1846,4 @@ label {
 
 /* --------------------------------------------------
 ------- Media Queries for Split Layout Ends ---------
----------------------------------------------------*/
+--------------------------------------------------- */
