@@ -58,8 +58,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "Jockey",
+    "appId": "jockey.dance",
     "files": [
       "dist/",
       "node_modules/",
@@ -108,14 +108,12 @@
   },
   "contributors": [
     {
-      "name": "Vikram Rangaraj",
-      "email": "vikr01@icloud.com",
-      "url": "https://github.com/vikr01"
+      "name": "spookyvert",
+      "url": "https://github.com/spookyvert"
     },
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "char",
+      "url": "https://github.com/char"
     }
   ],
   "license": "MIT",

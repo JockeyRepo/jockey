@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../constants/routes';
-import styles from './Home.css';
+
 
 type Props = {};
 
@@ -11,12 +11,14 @@ export default class Home extends Component < Props > {
 
   render() {
     return (
+
       <div class="wrapper">
+      
         <div class="main">
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
-                        <a class="wow fadeIn" data-wow-delay="0.3s" href="#"><img src="./assets/images/logo.png" width="35" height="35" alt="Logo"/></a>
+                        <img src="./assets/images/logo.png" width="35" height="35" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
                     </div>
                     <div class="intro">
                         <div class="intro-text">

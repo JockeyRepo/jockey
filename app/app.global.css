@@ -137,6 +137,56 @@ body {
     line-height: 1;
 }
 
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+/* title bar */
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 32px;   
+    padding: 0px;
+    margin: 0px;  
+    color: #ADADAD;
+    font-family: sans-serif;
+    z-index: 1000;
+}
+
+#title {
+    position: fixed;
+    top: 0px;
+    left: 12px; 
+    line-height: 32px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 1px;
+    right: 0px; 
+    z-index: 1000;
+}
+
+#title-bar-btns button {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    color: #F1F1F1;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+#title-bar-btns button:hover {
+    background-color: #3F3F41;
+    z-index: 1000;
+}
+
+/* title bar */
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
 
@@ -181,6 +231,7 @@ table {
 }
 .btn-contact{
     margin-top: 0px !important;
+    text-decoration: none !important;
 }
 /* --- Common Styles ---*/
 

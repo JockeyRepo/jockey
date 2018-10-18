@@ -25,8 +25,16 @@
       }());
     </script>
   </head>
-  <body>
+  <body style="-webkit-app-region: drag">
+    <div id="title-bar">
+      <div id="title-bar-btns">
+        <button id="min-btn"><i class="fa fa-minus icons" ></i></button>
+        <button id="max-btn"><i class="fa fa-expand icons" ></i></button>
+        <button id="close-btn"><i class="fa fa-times icons" ></i></button>
+      </div>
+    </div>
     <div id="root"></div>
+    <script src="title-bar.js"></script>
     <script>
       {
         const scripts = [];
