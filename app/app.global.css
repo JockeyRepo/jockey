@@ -240,7 +240,68 @@ h1 {
     font-size: 16px;
 }
 
+/* glow */
 
+ul li:hover.facebook {
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+ul li:hover.twitter {
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+ul li:hover.instagram {
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li.youtube 
+.youtube-i{
+  color: #ff0000;
+}
+
+ul li:hover .fa-youtube {
+  color: #ff0000 !important;
+  text-shadow: 0 0 15px #ff0000 !important;
+  transition: all 0.5s ease !important;
+}
+
+/* spotify */
+.wrapper ul li.spotify 
+.spotify-i {
+  color: #1db954;
+}
+
+.wrapper ul li:hover .fa-spotify {
+  color: #1db954 !important;
+  text-shadow: 0 0 15px #1db954 !important;
+  transition: all 0.5s ease !important;
+}
+
+/* glow */
 
 /*  */
 
@@ -332,7 +393,6 @@ input[type=file] {
 }
 
 .spotify-i {
-    color: green !important;
     font-size: 1.5em !important;
     padding: 3px;
 
@@ -357,7 +417,6 @@ input[type=file] {
 }
 
 .youtube-i {
-    color: red !important;
     font-size: 1.5em !important;
 
 }

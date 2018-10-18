@@ -49,8 +49,10 @@ export default class Home extends Component < Props > {
           <div class="song-title-meta">Travis Scott</div>
         </div>
         <div class="song-share">
-          <i class="fa fa-spotify spotify-i" ></i>
-          <i class="fa fa-youtube youtube-i" ></i>
+        <ul>
+          <li class="spotify"><i class="fa fa-spotify spotify-i" ></i></li>
+          <li class="youtube"><i class="fa fa-youtube youtube-i" ></i></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -66,8 +68,10 @@ export default class Home extends Component < Props > {
           <div class="song-title-meta">Kanye West</div>
         </div>
         <div class="song-share">
-          <i class="fa fa-spotify spotify-i" ></i>
-          <i class="fa fa-youtube youtube-i" ></i>
+         <ul>
+          <li class="spotify"><i class="fa fa-spotify spotify-i" ></i></li>
+          <li class="youtube"><i class="fa fa-youtube youtube-i" ></i></li>
+          </ul>
         </div>
       </div>
     </div>
