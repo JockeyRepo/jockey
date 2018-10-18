@@ -57,9 +57,9 @@ export default class QR extends Component<Props> {
                             </div>
                             <br/>
                             <span id="social-export">
-                <a href="#"><i class="fa fa-instagram icons" ></i></a>
-                <a href="#"><i class="fa fa-facebook icons" ></i></a>
-                <a href="#"><i class="fa fa-twitter icons" ></i> </a>
+                <a href="#"><i class="fa fa-instagram icons-qr" ></i></a>
+                <a href="#"><i class="fa fa-facebook icons-qr" ></i></a>
+                <a href="#"><i class="fa fa-twitter icons-qr" ></i> </a>
               </span>
                         </div>
                     </div>
