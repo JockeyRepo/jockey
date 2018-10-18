@@ -7,6 +7,6 @@ export default class QrPage extends Component<Props> {
   props: Props;
 
   render() {
-    return <Home />;
+    return <QR />;
   }
 }

@@ -15,7 +15,12 @@
   "javascript.format.enable": false,
   "typescript.validate.enable": false,
   "typescript.format.enable": false,
-
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000000CC",
+    "titleBar.activeBackground": "#FFC600",
+    "titleBar.inactiveBackground": "#FFC600CC"
+  },
   "flow.useNPMPackagedFlow": true,
   "search.exclude": {
     ".git": true,

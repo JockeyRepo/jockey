@@ -2,7 +2,7 @@
 let qu = []
 
 setInterval(() => {
-    axios.get('http://localhost:3000/api/party/201/requests')
+    axios.get('http:///localhost:3000/api/party/201/requests')
     .then(res => {
         for(req of res.data) {
             if(!qu.includes(req.song.title)){

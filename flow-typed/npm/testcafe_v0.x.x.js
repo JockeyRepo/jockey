@@ -1,4 +1,4 @@
-// flow-typed signature: f78a5287afa1143a9af0c11596f0599a
+// flow-typed signature: 47a32e7bccec89c55d746b93b3a95417
 // flow-typed version: 2ba87494a7/testcafe_v0.x.x/flow_>=v0.63.x
 
 /**

@@ -114,6 +114,10 @@
     {
       "name": "char",
       "url": "https://github.com/char"
+    },
+    {
+      "name": "AceroM",
+      "url": "https://github.com/AceroM"
     }
   ],
   "license": "MIT",
@@ -223,6 +227,7 @@
     "electron-debug": "^2.0.0",
     "history": "^4.7.2",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.4",
     "react-redux": "^5.0.7",

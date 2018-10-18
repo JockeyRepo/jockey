@@ -8,6 +8,9 @@ type Props = {};
 
 export default class Home extends Component < Props > {
   props: Props;
+  state = {
+
+  }
 
   render() {
     return (
@@ -29,7 +32,7 @@ export default class Home extends Component < Props > {
                                 <br class="visible-lg"/> that's all!</p>
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
-                            <Link to={routes.COUNTER} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
+                            <Link to={routes.QR} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
                             
                         </div>
                     </div>

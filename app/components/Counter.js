@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Counter.css';
+import styles from './qr.css';
 import routes from '../constants/routes';
 
 type Props = {
@@ -41,7 +41,7 @@ export default class Counter extends Component<Props> {
                             <p class="wow fadeInDown" data-wow-delay="0.6s">Make sure you write down your pin for users, <br class="visible-lg "/> safety first!
                                 <br class="visible-lg"/> </p>
                             <p class="wow fadeInDown" data-wow-delay="0.6s">We'll do everything else. ??</p>
-                            <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
+                            <Link to={routes.QR} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
                         </div>
                     </div>
                 </section>

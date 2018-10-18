@@ -13,7 +13,7 @@ setInterval(() => {
 }, 20)
 
 const createParty = () => {
-    axios.get(`./api/party/${document.getElementById('partyname').value}/create`)
+    axios.get(`http://jockey.dance/api/party/${document.getElementById('partyname').value}/create`)
     .then(res => {
         document.getElementById('pin').innerText += res.data.pin;
         console.log(res)
