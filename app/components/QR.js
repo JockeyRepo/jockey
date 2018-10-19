@@ -27,7 +27,7 @@ export default class QR extends Component<Props> {
                                     <br class="visible-lg"/> </p>
                                 <p class="wow fadeInDown" data-wow-delay="0.6s">Make sure you write down your pin for users, <br class="visible-lg "/> safety first!
                                     <br class="visible-lg"/> </p>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s">We'll do everything else. ??</p>
+                                <p class="wow fadeInDown" data-wow-delay="0.6s">We'll do everything else. 🤠</p>
                                 <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
                             </div>
                         </div>
@@ -57,9 +57,9 @@ export default class QR extends Component<Props> {
                             </div>
                             <br/>
                             <span id="social-export">
-                <a href="#"><i class="fa fa-instagram icons-qr" ></i></a>
-                <a href="#"><i class="fa fa-facebook icons-qr" ></i></a>
-                <a href="#"><i class="fa fa-twitter icons-qr" ></i> </a>
+                <a href="#"><i class="fab fa-instagram icons-qr" ></i></a>
+                <a href="#"><i class="fab fa-facebook icons-qr" ></i></a>
+                <a href="#"><i class="fab fa-twitter icons-qr" ></i> </a>
               </span>
                         </div>
                     </div>

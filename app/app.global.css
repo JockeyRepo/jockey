@@ -145,20 +145,11 @@ body {
 /* title bar */
 
 
-#left-btns{
-    -webkit-app-region: no-drag;
-    position: fixed;
-    top: 1px;
-    left: 0; 
-    padding-left: 5px;
-    z-index: 1000;
-}
-
 #left-btns {
     -webkit-app-region: no-drag;
     position: fixed;
     top: 1px;
-    right: 0; 
+    left: 0; 
     z-index: 1000;
 }
 
@@ -1123,12 +1114,12 @@ label {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
-    color: #001CFF;
+    color: #6e5494;
     display: inline-block;
     text-transform: uppercase;
     background: transparent;
     border: 2px solid;
-    border-color: #001CFF;
+    border-color: #6e5494;
     padding: 10px 20px;
     border-radius: 0;
     margin-top: 40px;
@@ -1141,8 +1132,8 @@ label {
 .btn-contact:hover,
 .btn-contact:focus {
     color: #FFF;
-    background: #001CFF;
-    border-color: #001CFF;
+    background: #6e5494;
+    border-color: #6e5494;
     text-decoration: none;
 }
 
