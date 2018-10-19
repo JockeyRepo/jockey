@@ -53,8 +53,8 @@ export default class Home extends Component < Props > {
         </div>
         <div class="song-share">
         <ul>
-          <li class="spotify"><i class="fa fa-spotify spotify-i" ></i></li>
-          <li class="youtube"><i class="fa fa-youtube youtube-i" ></i></li>
+          <li class="spotify"><i class="fab fa-spotify spotify-i" ></i></li>
+          <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
           </ul>
         </div>
       </div>
@@ -72,8 +72,8 @@ export default class Home extends Component < Props > {
         </div>
         <div class="song-share">
          <ul>
-          <li class="spotify"><i class="fa fa-spotify spotify-i" ></i></li>
-          <li class="youtube"><i class="fa fa-youtube youtube-i" ></i></li>
+          <li class="spotify"><i class="fab fa-spotify spotify-i" ></i></li>
+          <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
           </ul>
         </div>
       </div>
