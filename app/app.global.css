@@ -381,7 +381,7 @@ ul li:hover .fa-youtube {
 }
 
 .song-list .song .song-share {
-  min-width: 5em;
+  min-width: 10em;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -389,7 +389,19 @@ ul li:hover .fa-youtube {
 }
 
 
+.table {
+    display: table;   /* Allow the centering to work */
+    margin: 0 auto;
+}
 
+ul#song-table {
+    list-style: none;
+    padding-top: 10px;
+    }
+
+ul#song-table li {
+    display: inline;
+    }
 
 
 
@@ -419,7 +431,7 @@ input[type=file] {
 
 .spotify-i {
     font-size: 1.5em !important;
-    padding: 3px;
+    padding: 10px;
 
 }
 .twitter-i {
@@ -456,8 +468,28 @@ input[type=file] {
 
 .youtube-i {
     font-size: 1.5em !important;
+    padding-right: 15px;
 
 }
+
+.fire-i {
+    font-size: 1.5em !important;
+
+}
+
+.wrapper ul li.popular 
+.fire-i{
+   color: #ff9900 !important;
+  text-shadow: 0 0 15px #ff9900 !important;
+  transition: all 0.5s ease !important;
+}
+
+ul li .fas-fire {
+  color: #ff9900 !important;
+  text-shadow: 0 0 15px #ff9900 !important;
+  transition: all 0.5s ease !important;
+}
+
 
 .intro-right {
     padding: 150px 0 0 0 !important;
