@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../constants/routes';
+import Song from './Song';
 
 
 type Props = {};
@@ -9,14 +10,50 @@ type Props = {};
 export default class Home extends Component < Props > {
   props: Props;
   state = {
-
+    songs: [
+      { 
+          title: "Sicko Mode",
+          artist: "Travis Scott",
+          img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg",
+          spotify: "2xLMifQCjDGFmkHkpNLD9h",
+          requests: 10,
+      },
+      {
+          title: "XO TOUR Llif3",
+          artist: "Lil Uzi Vert",
+          img: "https://upload.wikimedia.org/wikipedia/en/6/65/Luv_Is_Rage_2_cover.jpg",
+          spotify: "7GX5flRQZVHRAGd6B4TmDO",
+          requests: 69
+      },
+      {
+          title: "Ultralight Beam",
+          artist: "Kanye West",
+          img: "https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg",
+          spotify: "2tecGOQrBrYE56iCjzLiXm",
+          requests: 4
+      },
+      {
+          title: "Rubbin Off The Paint",
+          artist: "YBN Nahmir",
+          img: "https://upload.wikimedia.org/wikipedia/en/e/e8/YBNRubbinOffthePaint.jpg",
+          spotify: "3H2HxkHvD2D4LbeNyJ4WMy",
+          requests: 100
+      },
+    ]
+  }
+  componentDidMount() {
+    //add fetch stuff here
   }
 
   render() {
+    let songArr = this.state.songs.sort((a,b) => b.requests-a.requests).map((item, i) => {
+      return(
+          <Song key={i} title={item.title} artist={item.artist} img={item.img} spotify={item.spotify}
+          requests={item.requests}/>
+      )
+    }) 
     return (
-
       <div class="wrapper">
-
         <div class="main">
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
@@ -33,66 +70,18 @@ export default class Home extends Component < Props > {
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
                             <Link to={routes.QR} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
-                            
                         </div>
                     </div>
                 </section>
                 <section class="right-section">
                     <div class="intro-right intro">
-                        <div class="intro-text">
-                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">Current Requests</h4>
-                            <div class="wow fadeInDown" data-wow-delay=" 0.6s">
-
-<div class="song-box">
-  <div class="song-list">
-    <div class="song">
-      <div class="song-container"><img class="song-cover" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg"/>
-        <div class="song-title">
-          <div class="song-title-name">Sicko Mode</div>
-          <div class="song-title-meta">Travis Scott</div>
-        </div>
-        <div class="song-share">
-        <div class="table">
-        <ul id="song-table">
-          <li class="spotify"><i class="fab fa-spotify spotify-i" ></i></li>
-          <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
-          <li id="popular"><i class="fas fa-fire fire-i" ></i></li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="song-box">
-  <div class="song-list">
-    <div class="song">
-      <div class="song-container"><img class="song-cover" src="https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg"/>
-        <div class="song-title">
-          <div class="song-title-name">I Love Kanye</div>
-          <div class="song-title-meta">Kanye West</div>
-        </div>
-        <div class="song-share">
-        <div class="table">
-        <ul id="song-table">
-          <li class="spotify"><i class="fab fa-spotify spotify-i" ></i></li>
-          <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
-          <li id="popular"><i class="fas fa-fire fire-i" ></i></li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-                            
+                        <div id="songContainer" class="intro-text">
+                          <h4 class="wow fadeInDown" data-wow-delay="0.4s">Current Requests</h4>
+                          <div class="wow fadeInDown" data-wow-delay=" 0.6s">
+                            {songArr}
+                          </div>
                         </div>
                     </div>
-                   
                 </section>
             </section>
         </div>

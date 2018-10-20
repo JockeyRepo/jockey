@@ -328,18 +328,18 @@ ul li:hover .fa-youtube {
 
 /* glow */
 
-/*  */
+/*  Song container */
 
 .song-box {
-  max-width: 468px;
-  width: 100%;
-  margin: 0 auto;
-  background: #232342;
-  overflow: hidden;
+    max-width: 468px;
+    width: 100%;
+    margin: 0 auto 5px auto;
+    background: #232342;
+    overflow: hidden;
 }
 
 .song-list .song {
-  background-color: white;
+    background-color: white;
 }
 
 .song-list .song-progress {
@@ -478,17 +478,16 @@ input[type=file] {
 }
 
 #popular{
-   color: #ff9900 !important;
-  text-shadow: 0 0 20px #ff9900 ;
-  transition: all 0.5s ease !important;
+    color: #ff9900 !important;
+    text-shadow: 0 0 20px #ff9900 ;
+    transition: all 0.5s ease !important;
 }
 
 ul li .fas-fire {
-  color: #ff9900 !important;
-  text-shadow: 0 0 15px #ff9900 !important;
-  transition: all 0.5s ease !important;
+    color: #ff9900 !important;
+    text-shadow: 0 0 15px #ff9900 !important;
+    transition: all 0.5s ease !important;
 }
-
 
 .intro-right {
     padding: 150px 0 0 0 !important;

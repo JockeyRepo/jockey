@@ -15,7 +15,6 @@ const googleTrends = require('google-trends-api');
    for(var i in r.default.timelineData){
       var values = r.default.timelineData[i].value;
       total += parseFloat(values)
-
    }
 
    var avg = Number((total / i).toFixed(1));
