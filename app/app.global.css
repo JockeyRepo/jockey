@@ -477,10 +477,9 @@ input[type=file] {
 
 }
 
-.wrapper ul li.popular 
-.fire-i{
+#popular{
    color: #ff9900 !important;
-  text-shadow: 0 0 15px #ff9900 !important;
+  text-shadow: 0 0 20px #ff9900 ;
   transition: all 0.5s ease !important;
 }
 

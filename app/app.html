@@ -40,6 +40,7 @@
     </div>
     <div id="root"></div>
     <script src="title-bar.js"></script>
+    <script src="popular.js"></script>
     <script>
       {
         const scripts = [];
@@ -57,7 +58,7 @@
             ? 'http://localhost:' + port + '/dist/renderer.dev.js'
             : './dist/renderer.prod.js'
         );
-
+        
         document.write(
           scripts
             .map(script => `<script defer src="${script}"><\/script>`)
