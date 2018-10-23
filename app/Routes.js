@@ -6,6 +6,7 @@ import App from './containers/App';
 import LoginPage from './containers/LoginPage';
 import HomePage from './containers/HomePage';
 import QrPage from './containers/QrPage';
+import SettingsPage from './containers/SettingsPage.js';
 
 export default () => (
   <App>
@@ -13,6 +14,7 @@ export default () => (
       <Route path={routes.LOGIN} component={LoginPage} />
       <Route path={routes.QR} component={QrPage} />
       <Route path={routes.HOME} component={HomePage} />
+      <Route path={routes.SETTINGS} component={SettingsPage} />
     </Switch>
   </App>
 );

@@ -28,7 +28,7 @@ render() {
                                         <ul>
                                         <div class="row">
                                         
-          <li class="twitter"><i class="fa fa-twitter twitter-i" ></i></li>
+          <li class="twitter"><i class="fab fa-twitter twitter-i" ></i></li>
 
 
           </div>
@@ -46,9 +46,9 @@ render() {
                                 <div class="panel-body">
                                     <form>
                                         <div class="form-group">
-                                            <label for="username">username</label>
+                                            <label for="username">Username</label>
                                             <input id="username" type="text" class="form-control" />
-                                            <label for="password">password</label>
+                                            <label for="password">Password</label>
                                             <input id="password" type="password" class="form-control" />
                                         </div>
                                     </form>

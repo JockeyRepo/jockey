@@ -14,6 +14,7 @@ export default class Home extends Component < Props > {
       { 
           title: "Sicko Mode",
           artist: "Travis Scott",
+          genre: "Rap",
           img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg",
           spotify: "2xLMifQCjDGFmkHkpNLD9h",
           requests: 10,
@@ -21,6 +22,7 @@ export default class Home extends Component < Props > {
       {
           title: "XO TOUR Llif3",
           artist: "Lil Uzi Vert",
+          genre: "Rap",
           img: "https://upload.wikimedia.org/wikipedia/en/6/65/Luv_Is_Rage_2_cover.jpg",
           spotify: "7GX5flRQZVHRAGd6B4TmDO",
           requests: 69
@@ -28,6 +30,7 @@ export default class Home extends Component < Props > {
       {
           title: "Ultralight Beam",
           artist: "Kanye West",
+          genre: "Rap",
           img: "https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg",
           spotify: "2tecGOQrBrYE56iCjzLiXm",
           requests: 4
@@ -35,9 +38,18 @@ export default class Home extends Component < Props > {
       {
           title: "Rubbin Off The Paint",
           artist: "YBN Nahmir",
+          genre: "Mumble",
           img: "https://upload.wikimedia.org/wikipedia/en/e/e8/YBNRubbinOffthePaint.jpg",
           spotify: "3H2HxkHvD2D4LbeNyJ4WMy",
           requests: 100
+      },
+      {
+          title: "Hell Above",
+          artist: "Pierce the Veil",
+          genre: "Rock",
+          img: "https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg",
+          spotify: "3H2HxkHvD2D4LbeNyJ4WMy",
+          requests: 12
       },
     ]
   }
@@ -48,7 +60,7 @@ export default class Home extends Component < Props > {
   render() {
     let songArr = this.state.songs.sort((a,b) => b.requests-a.requests).map((item, i) => {
       return(
-          <Song key={i} title={item.title} artist={item.artist} img={item.img} spotify={item.spotify}
+          <Song key={i} title={item.title} artist={item.artist} genre={item.genre} img={item.img} spotify={item.spotify}
           requests={item.requests}/>
       )
     }) 
@@ -70,6 +82,8 @@ export default class Home extends Component < Props > {
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
                             <Link to={routes.QR} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
+                            <Link to={routes.LOGIN} className="btn-contact wow fadeInDown" >Login Screen</Link>
+                            <Link to={routes.SETTINGS} className="btn-contact wow fadeInDown" >SETTINGS Screen</Link>
                         </div>
                     </div>
                 </section>

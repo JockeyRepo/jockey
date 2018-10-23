@@ -1,5 +1,6 @@
 {
   "HOME": "/",
   "LOGIN": "/login",
-  "QR": "/qr"
+  "QR": "/qr",
+  "SETTINGS": "/settings"
 }

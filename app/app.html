@@ -29,7 +29,7 @@
   <body style="-webkit-app-region: drag">
     <div id="title-bar">
       <div id="left-btns">
-        <button id="logout-btn"><i class="fas fa-door-open icons" ></i></button>
+       <Link to={routes.LOGIN} className="btn-contact wow fadeInDown" > <button id="logout-btn"><i class="fas fa-door-open icons" ></i></button></Link>
         <button id="settings-btn"><i class="fas fa-cog icons" ></i></button>
       </div>
       <div id="title-bar-btns">
@@ -58,7 +58,7 @@
             ? 'http://localhost:' + port + '/dist/renderer.dev.js'
             : './dist/renderer.prod.js'
         );
-        
+
         document.write(
           scripts
             .map(script => `<script defer src="${script}"><\/script>`)
