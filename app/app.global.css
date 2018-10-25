@@ -1766,9 +1766,18 @@ hr {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.searchContainer input#search:focus{
+     outline: none;
 }
 .searchContainer input#search::-webkit-input-placeholder {
    color: #65737e;
+
    text-align: left !important;
 
 }
