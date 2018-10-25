@@ -333,7 +333,7 @@ ul li:hover .fa-youtube {
 
 .song-box {
   max-width: 468px;
-  width: 100%;
+  width: 100% ;
   margin: 0 auto 5px auto;
   background: #232342;
   overflow: hidden;
@@ -426,6 +426,26 @@ ul li:hover .fa-youtube {
   justify-content: center;
   text-align: center;
 }
+
+
+/* */
+
+ 
+
+
+
+
+
+
+
+
+/* */
+
+
+
+
+
+
 .song-title-meta {
   font-weight: 200;
   font-size: .75em;
@@ -1724,6 +1744,63 @@ hr {
   transform: translateX(0);
 }
 
+.searchBox{
+    margin: 15px auto;
+}
+.searchContainer{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.searchContainer input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: center;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.searchContainer input#search::-webkit-input-placeholder {
+   color: #65737e;
+   text-align: left !important;
+
+}
+ 
+.searchContainer input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+    text-align: left !important;
+}
+ 
+.searchContainer input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e; 
+    text-align: left !important; 
+}
+ 
+.searchContainer input#search:-ms-input-placeholder {  
+   color: #65737e;  
+    text-align: left !important;
+}
+.searchContainer .icon-s{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: -6px;
+    z-index: 1;
+    color: #4f5b66;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
 /* -----------------------------------------------
 ----------- Project Single Styling End -----------
 ------------------------------------------------- */
@@ -1761,10 +1838,17 @@ hr {
 label {
   display: block;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
-  color: #6e5494;
+  color: #A1A1A1;
+  text-align: left;
 }
+
+.form-control-login {
+  color: #A1A1A1 !important;
+  margin-top: 0px !important;
+}
+
 
 .form-control {
   color: #A1A1A1;
@@ -1782,7 +1866,7 @@ label {
 }
 
 .form-control:focus {
-  border-color: #001CFF;
+  border-color: #6e5494;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

@@ -1,7 +1,6 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './qr.css';
 import routes from '../constants/routes';
 
 type Props = {
@@ -47,12 +46,13 @@ export default class QR extends Component<Props> {
                                     </form>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-12">
-                                        <button type="button" onclick="createParty()" class="btn-contact wow fadeInDown" data-wow-delay=".6s">Submit</button>
-                                    </div>
+                                    
                                     <img id="qrimg" src="https://orig00.deviantart.net/c5f0/f/2015/066/1/9/qr_code_animated__by_junguler-d8kqfbf.gif" width="250px" height="250px" />
                                     <br/><br/>
-                                    <p id="pin">Your Pin: </p>
+                                    <div class="col-sm-12">
+                                        <button type="button" onclick="createParty()" class="btn-contact wow fadeInDown" data-wow-delay=".6s">Submit</button>
+                                        
+                                    </div>
                                 </div>
                             </div>
                             <br/>

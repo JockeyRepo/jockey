@@ -10,13 +10,19 @@ class SearchBar extends Component {
         const { searchTerm } = this.props;
         return (
             <div>
+            <div class="searchBox">
+            <div class="searchContainer">
+                <span class="icon-s"><i class="fas fa-search"></i></span>
                 <input
+                    type="search" 
+                    id="search" 
                     type="text"
                     className="SearchBar"
                     value={ searchTerm }
-                    placeholder="Search..."
                     onChange={this.onSearch}
                 />
+                </div>
+                </div>
             </div>
         );
     }

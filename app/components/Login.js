@@ -46,17 +46,16 @@ render() {
                                 <div class="panel-body">
                                     <form>
                                         <div class="form-group">
-                                            <label for="username">Username</label>
-                                            <input id="username" type="text" class="form-control" />
-                                            <label for="password">Password</label>
-                                            <input id="password" type="password" class="form-control" />
+                                            <label for="username">EMAIL ADDRESS</label>
+                                            <input id="username" type="text" class="form-control form-control-login" />
+                                            <label for="password">PASSWORD</label>
+                                            <input id="password" type="password" class="form-control form-control-login" />
                                         </div>
                                     </form>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                     <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s"> Login </Link>
-                                        <button type="button" onclick="createParty()" class="btn-contact wow fadeInDown" data-wow-delay=".6s">Submit</button>
                                     </div>
                                     <br/><br/>
                                 </div>
