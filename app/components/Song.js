@@ -34,7 +34,7 @@ export default class Song extends Component {
                                         </li>
                                         <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
                                         <li id="popular"><i class="fas fa-fire fire-i" ></i></li>
-                                        <li id="rate"><i class="fas fa-plus" > <span id="rate-text">{req == 100 ? "💯" : req}</span></i></li>
+                                        <li id="rate"><span id="rate-text">{req == 100 ? "💯" : req}</span></li>
                                     </ul>
                                     <span class="song-genre"> Genre: {this.props.genre} </span>
                                 </div>
