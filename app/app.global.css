@@ -327,7 +327,25 @@ ul li:hover .fa-youtube {
   transition: all 0.5s ease !important;
 }
 
-/* glow */
+/* scroll container */
+.container {
+  width: 100%;
+  height: 60vh;
+  /* border: 1px solid royalblue; */
+  overflow: hidden;
+}
+
+.container__inner {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: -webkit-grab;
+}
+
+.container__inner--dragging {
+  /* transition: all 0.05s cubic-bezier(0.165, 0.84, 0.44, 1); */
+  transition: none;
+  user-select: none;
+  cursor: -webkit-grabbing;
+}
 
 /*  Song container */
 

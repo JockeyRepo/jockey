@@ -9,23 +9,12 @@ type Props = {};
 export default class Home extends Component < Props > {
   props: Props;
   state = {
-    // totalReqs: 0,
-  }
-  componentWillMount() {
-    // this.setState({totalReqs: this.state.songs.reduce((a, v) => (a += v.requests), 0)})
   }
   componentDidMount() {
     //add fetch stuff here
-    // console.log(this.state.totalReqs)
   }
 
   render() {
-    // let songArr = this.state.songs.sort((a,b) => b.requests-a.requests).map((item, i) => {
-    //     return(
-    //         <Song key={i} title={item.title} artist={item.artist} genre={item.genre} img={item.img} spotify={item.spotify}
-    //         requests={item.requests}/>
-    //     )
-    // }) 
     return (
     <div class="wrapper">
         <div class="main">
@@ -54,7 +43,6 @@ export default class Home extends Component < Props > {
                         <div id="songContainer" class="intro-text">
                             <h4 class="wow fadeInDown" data-wow-delay="0.4s">Current Requests</h4>
                             <div class="wow fadeInDown" data-wow-delay=" 0.6s">
-                                { /* songArr */ }
                                 <Search/>
                             </div>
                         </div>
