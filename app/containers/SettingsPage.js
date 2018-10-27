@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Login from '../components/Settings.js';
+import Settings from '../components/Settings';
 
 type Props = {};
 

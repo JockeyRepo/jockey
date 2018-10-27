@@ -67,7 +67,7 @@ class Search extends Component {
             dragging: false,
             scroll: Math.max(Math.min(state.scroll, 0), -this.max)
         }));
-        console.log(this.state.scroll)
+
     };
 
     handleMouseMove = e => {
@@ -90,7 +90,6 @@ class Search extends Component {
     
     handleMouseUp = e => {
         e.preventDefault();
-        console.log("up");
         this.scrollToPosition();
     };
     

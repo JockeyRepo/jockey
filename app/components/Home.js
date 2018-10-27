@@ -17,6 +17,7 @@ export default class Home extends Component < Props > {
   render() {
     return (
     <div class="wrapper">
+
         <div class="main">
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
@@ -33,8 +34,6 @@ export default class Home extends Component < Props > {
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
                             <Link to={routes.QR} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
-                            <Link to={routes.LOGIN} className="btn-contact wow fadeInDown" >Login Screen</Link>
-                            <Link to={routes.SETTINGS} className="btn-contact wow fadeInDown" >SETTINGS Screen</Link>
                         </div>
                     </div>
                 </section>

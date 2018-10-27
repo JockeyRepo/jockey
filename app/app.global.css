@@ -178,6 +178,67 @@ body {
   z-index: 1000;
 }
 
+#left-btns button {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  color: #F1F1F1;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+#left-btns  button:hover {
+  background-color: #3F3F41;
+  z-index: 1000;
+}
+
+#left-btns a{
+  color: #F1F1F1;
+}
+
+button:focus{
+     outline: none;
+}
+.settings-content{
+  width: 100%;
+}
+#go-back span{
+      font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: #A1A1A1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: none;
+
+}
+
+#go-back span:hover, span:focus{
+      font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6e5494;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+
+
+}
+.setting-item p{
+  font-family: sans-serif !important;
+  font-style: italic;
+}
+
 #title {
   position: fixed;
   top: 0;
