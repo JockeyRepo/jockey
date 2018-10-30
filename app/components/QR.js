@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../constants/routes';
 
-type Props = {
-};
+type Props = {};
 
-export default class QR extends Component<Props> {
+export default class QR extends Component < Props > {
   props: Props;
 
   render() {
@@ -40,11 +39,15 @@ export default class QR extends Component<Props> {
                             <h4 class="wow fadeInDown" data-wow-delay="0.4s">Enter the Title of your event!</h4>
                             <div class="wow" data-wow-delay=" 0.6s">
                                 <div class="panel-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <input id="partyname" type="text" class="form-control" />
-                                        </div>
-                                    </form>
+                                    <div class="searchContainer">
+                                    <input
+                                        type="title" 
+                                        id="partyname" 
+                                        type="text"
+                                        placeholder="Title..."
+                                    />
+                                    
+                                    </div>
                                 </div>
                                 <div class="row">
                                     
