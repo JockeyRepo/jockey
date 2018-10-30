@@ -225,7 +225,7 @@ a:hover{
       font-family: Poppins;
     font-size: 14px;
     font-weight: 600;
-    color: #6e5494;
+    color: #FBD68A;
     letter-spacing: 3px;
     text-transform: uppercase;
     line-height: 1.2;
@@ -414,7 +414,7 @@ ul li:hover .fa-youtube {
   max-width: 468px;
   width: 100% ;
   margin: 0 auto 5px auto;
-  background: #232342;
+  background: #212121;
   overflow: hidden;
 }
 
@@ -484,7 +484,7 @@ ul li:hover .fa-youtube {
 }
 
 .song-list .song .song-title {
-  background-color: #21242b;
+  background-color: #1f1f1f;
   font-family: "Roboto", sans-serif;
   flex: 1 1 auto;
   color: white;
@@ -541,7 +541,7 @@ ul li:hover .fa-youtube {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  background-color: #21242b;
+  background-color: #1d1d1d;
 }
 
 
@@ -1212,7 +1212,7 @@ hr {
 }
 
 .left-section {
-  background-color: #21242B;
+  background-color: #212121;
   position: absolute;
   left: 0;
   right: 0;
@@ -1225,7 +1225,7 @@ hr {
 }
 
 .full-section {
-  background-color: #21242B;
+  background-color: #212121;
   position: absolute;
   left: 0;
   right: 0;
@@ -1259,10 +1259,22 @@ hr {
 }
 
 .main-logo {
-  padding: 100px 0 0 0;
+  padding: 150px 0 0 0;
+  animation: float 7s ease-in-out infinite;
   text-align: center;
 }
 
+@keyframes float{
+    0%{
+        transform:translatey(0px)
+    }
+    50%{
+        transform:translatey(-15px)
+    }
+    100%{
+        transform:translatey(0px)
+    }
+}
 
 .right-section {
   position: absolute;
@@ -1272,7 +1284,7 @@ hr {
   padding: 0 40px 0 40px;
   width: 50%;
   height: 100%;
-  background: #272B34;
+  background: #252525;
   z-index: 99;
   overflow: hidden;
   overflow-y: auto;
@@ -1339,12 +1351,12 @@ hr {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  color: #6e5494;
+  color: #FBD68A;
   display: inline-block;
   text-transform: uppercase;
   background: transparent;
   border: 2px solid;
-  border-color: #6e5494;
+  border-color: #FBD68A;
   padding: 10px 20px;
   border-radius: 0;
   margin-top: 40px;
@@ -1356,12 +1368,56 @@ hr {
 
 .btn-contact:hover,
 .btn-contact:focus {
-  color: #FFF;
-  background: #6e5494;
-  border-color: #6e5494;
+  color: #212121;
+  background: #FBD68A;
+  border-color: #FBD68A;
+
   text-decoration: none;
+
 }
 
+
+.main-button {
+  font-family: sans-serif;
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  line-height: 44px;
+  text-decoration: none;
+  color: #212121;
+  background-color: #FBD68A;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 124px;
+  height: 44px;
+  margin-top: -22px;
+  margin-left: -62px;
+  text-shadow: 0 -1px -1px #faca67;
+  -moz-box-shadow: 0 4px 0 #faca67, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 0 #faca67, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 0 #faca67, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-button:hover {
+  font-family: sans-serif;
+  background-color: #facd71;
+  text-shadow: 0 -1px -1px #f9c14f;
+  -moz-box-shadow: 0 4px 0 #f9c14f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 0 #f9c14f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 0 #f9c14f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+}
+.main-button:active {
+  font-family: sans-serif;
+  margin-top: -18px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 /* ----------------------------------------------------
 -------------- About Page Styling Starts --------------
@@ -1836,7 +1892,7 @@ hr {
 .searchContainer input#search{
   width: 300px;
   height: 50px;
-  background: #2b303b;
+  background: #212121;
   border: none;
   font-size: 10pt;
   float: center;
@@ -1954,7 +2010,7 @@ label {
 }
 
 .form-control:focus {
-  border-color: #6e5494;
+  border-color: #FBD68A;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

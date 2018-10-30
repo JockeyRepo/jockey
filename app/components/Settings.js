@@ -14,7 +14,8 @@ export default class Settings extends Component < Props > {
         <div class="main">
                 <section class="full-section wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
-                        <img src="./assets/images/logo.png" width="35" height="35" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                        <img src="./assets/images/logo.png" width="10%" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                        </div>
                         <div class="intro intro-settings" >
                             <div class="intro-text">
                                 <h4 class="wow fadeInDown" data-wow-delay="0.4s">Settings</h4>
@@ -61,7 +62,7 @@ export default class Settings extends Component < Props > {
 
                                     
                             </div>
-                        </div>
+                        
                     </div>
                     </div>
             </section>

@@ -16,7 +16,8 @@ render() {
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
-                        <img src="./assets/images/logo.png" width="35" height="35" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                        <img src="./assets/images/logo.png" width="50%"  alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                    </div>
                         <div class="intro">
                             <div class="intro-text">
                                 <h4 class="wow fadeInDown" data-wow-delay="0.4s">What is Jockey?</h4>
@@ -35,7 +36,7 @@ render() {
           </ul>
                             </div>
                         </div>
-                    </div>
+                    
                 </section>
 
                 <section class="right-section">

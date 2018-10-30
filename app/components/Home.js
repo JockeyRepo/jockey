@@ -22,7 +22,7 @@ export default class Home extends Component < Props > {
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
-                        <img src="./assets/images/logo.png" width="35" height="35" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                        <img src="./assets/images/logo.png" width="50%"  alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
                     </div>
                     <div class="intro">
                         <div class="intro-text">
@@ -33,7 +33,7 @@ export default class Home extends Component < Props > {
                                 <br class="visible-lg"/> that's all!</p>
                             <p class="wow fadeInDown" data-wow-delay="0.6s">just like magic! <br class="visible-lg "/>
                                 <br class="visible-lg"/> ...not really 🤫</p>
-                            <Link to={routes.QR} className="btn-contact wow fadeInDown" >Generate QR Code</Link>
+                            <Link to={routes.QR} className="btn-contact wow fadeInDown" >QR </Link>
                         </div>
                     </div>
                 </section>

@@ -16,7 +16,8 @@ export default class QR extends Component<Props> {
             <section class="split-home">
                 <section class="left-section wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
-                        <img src="./assets/images/logo.png" width="35" height="35" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                        <img src="./assets/images/logo.png" width="50%"  alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
+                    </div>
                         <div class="intro">
                             <div class="intro-text">
                                 <h4 class="wow fadeInDown" data-wow-delay="0.4s">Creating a QR Code!</h4>
@@ -30,7 +31,7 @@ export default class QR extends Component<Props> {
                                 <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
                             </div>
                         </div>
-                    </div>
+                    
                 </section>
 
                 <section class="right-section">
