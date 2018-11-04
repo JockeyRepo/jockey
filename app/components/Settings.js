@@ -24,7 +24,7 @@ export default class Settings extends Component < Props > {
                                   <div class="row">
 
                                     <div class="col-sm-6 setting-item">
-                                        <p class="wow fadeInDown" data-wow-delay="0.6s"> toggle item</p>
+                                        <p class="wow fadeInDown" data-wow-delay="0.6s"> Filter</p>
 
                                     </div>
 

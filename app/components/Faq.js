@@ -12,12 +12,12 @@ export default class Faq extends Component < Props > {
     return (
       <div class="wrapper">
         <div class="main">
-                <section class="full-section wow fadeIn" data-wow-delay="0.2s">
+                <section class="full-section-faq wow fadeIn" data-wow-delay="0.2s">
                     <div class="main-logo">
                         <img src="./assets/images/logo.png" width="10%" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s"  />
                         </div>
                         <div class="intro intro-settings" >
-                            <div class="intro-text">
+                            <div class="intro-text faq-box">
                                
                                 <div class="faq-content">
                                  <h4 class="wow fadeInDown" data-wow-delay="0.4s">FAQ</h4>
@@ -51,6 +51,7 @@ Curabitur dictum est ex, viverra feugiat orci vestibulum quis. Praesent suscipit
 
                               
                                 <Link to={routes.HOME} class=" wow fadeInDown" id="go-back"><span><i class="fas fa-arrow-left icons"></i> Main Menu</span></Link>
+
 
 
                                     
