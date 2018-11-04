@@ -2,5 +2,7 @@
   "HOME": "/",
   "LOGIN": "/login",
   "QR": "/qr",
+  "FAQ": "/faq",
   "SETTINGS": "/settings"
+
 }

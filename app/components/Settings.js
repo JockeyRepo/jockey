@@ -60,11 +60,17 @@ export default class Settings extends Component < Props > {
                               
                                 <Link to={routes.HOME} class=" wow fadeInDown" id="go-back"><span><i class="fas fa-arrow-left icons"></i> Main Menu</span></Link>
 
+                                <div class="settings-footer">
+                                <Link to={routes.FAQ} class=" wow fadeInDown faq-link"><span>FAQ</span></Link>
+                                </div>
+
+
                                     
                             </div>
                         
                     </div>
                     </div>
+
             </section>
         </div>
     </div>
