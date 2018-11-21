@@ -154,6 +154,16 @@ body {
 
 }
 
+#filterNew{
+    font-family: Poppins;
+    text-align:justify !important;
+    font-size: 12px;
+    font-weight: 200;
+    color: #A1A1A1;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
 #faq-text{
     font-family: sans-serif;
     text-align:justify !important;
@@ -1339,13 +1349,16 @@ hr {
 
 .main-logo {
   padding: 150px 0 0 0;
-  animation: float 7s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   text-align: center;
 }
 
 @keyframes float{
     0%{
         transform:translatey(0px)
+    }
+    25%{
+      transform:translatey(-55px)
     }
     50%{
         transform:translatey(-15px)
@@ -1354,6 +1367,8 @@ hr {
         transform:translatey(0px)
     }
 }
+
+
 
 .faq-box{
   padding-bottom: 2em;
