@@ -1,6 +1,8 @@
-# JOCKEY
+# JOCKEY 💃🏾👏🏾
+![status not ready](https://img.shields.io/badge/status-not%20ready-red.svg)
+seamlessly request music to any event ☁️
 
-seamlessly request music to any event
+![screenshot of jockey](screenshot.jpg)
 
 ## Getting Started
 
@@ -12,7 +14,6 @@ What things you need to install the software and how to install them
 
 ```
 * [yarn](https://yarnpkg.com/en/) - Packager
-
 ```
 
 ### Installing
@@ -24,7 +25,6 @@ Say what the step will be
 ```
 $ cd jockey
 $ yarn
-
 ```
 To run the dev environment
 
@@ -36,7 +36,6 @@ $ yarn dev
 
 ```
 $ yarn package
-
 ```
 Multiple Platforms
 
@@ -63,9 +62,3 @@ End with an example of getting some data out of the system or using it for a lit
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
