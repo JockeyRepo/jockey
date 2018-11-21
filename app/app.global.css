@@ -560,7 +560,7 @@ ul li:hover .fa-youtube {
 
 /* */
 
- 
+
 
 
 
@@ -1358,7 +1358,7 @@ hr {
         transform:translatey(0px)
     }
     25%{
-      transform:translatey(-55px)
+      transform:translatey(-10px)
     }
     50%{
         transform:translatey(-15px)
@@ -2024,19 +2024,19 @@ hr {
    text-align: left !important;
 
 }
- 
+
 .searchContainer input:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;  
+   color: #65737e;
     text-align: left !important;
 }
- 
+
 .searchContainer input#search::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e; 
-    text-align: left !important; 
+   color: #65737e;
+    text-align: left !important;
 }
- 
-.searchContainer input:-ms-input-placeholder {  
-   color: #65737e;  
+
+.searchContainer input:-ms-input-placeholder {
+   color: #65737e;
     text-align: left !important;
 }
 .searchContainer .icon-s{
