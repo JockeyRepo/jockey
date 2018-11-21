@@ -16,7 +16,7 @@ Programs you needs to run Jockey
 * [yarn](https://yarnpkg.com/en/) - Packager
 ```
 
-### 𝕰𝖓𝖙𝖊𝖗𝖎𝖓𝖌 𝖕𝖗𝖔𝖏𝖊𝖈𝖙
+### 𝔈𝔫𝔱𝔢𝔯𝔦𝔫𝔤 𝔭𝔯𝔬𝔧𝔢𝔠𝔱
 
 To enter project pass the following into your terminal
 
@@ -47,13 +47,12 @@ $ yarn package-all
 * [Electron](https://electronjs.org/) - Cross-Platform framework
 
 
-## Authors
-
+## ℭ𝔯𝔢𝔞𝔱𝔬𝔯𝔰 ヽ༼ຈل͜ຈ༽ﾉ
 * **(っ◔◡◔)っ ♥ Shemar Dacosta ♥** - *Project Lead / Frontend Engineer* - [@spookyvert](https://github.com/spookyvert)
 * **≋M≋i≋g≋u≋e≋l≋ ≋A≋c≋e≋r≋o≋** - *Frontend Engineer* - [@spookyvert](https://github.com/AceroM)
 * **K̾e̾v̾i̾n̾ ̾C̾r̾u̾z̾** - *Frontend Engineer / Designs * - [@spookyvert](https://github.com/KevTLW)
 * **𝖈𝖍𝖆𝖗** - *Backend Developer* - [@char](https://github.com/char)
 
-## License
+## 𝔏𝔦𝔠𝔢𝔫𝔰𝔢
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
