@@ -8,19 +8,17 @@ seamlessly request music to any event ☁️
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### 𝔓𝔯𝔢𝔯𝔢𝔮𝔲𝔦𝔰𝔦𝔱𝔢𝔰
 
-What things you need to install the software and how to install them
+Programs you needs to run Jockey
 
 ```
 * [yarn](https://yarnpkg.com/en/) - Packager
 ```
 
-### 𝔓𝔯𝔢𝔯𝔢𝔮𝔲𝔦𝔰𝔦𝔱𝔢𝔰
+### 𝕰𝖓𝖙𝖊𝖗𝖎𝖓𝖌 𝖕𝖗𝖔𝖏𝖊𝖈𝖙
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+To enter project pass the following into your terminal
 
 ```
 $ cd jockey
@@ -42,9 +40,6 @@ Multiple Platforms
 ```
 $ yarn package-all
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 
 ## 𝔅𝔲𝔦𝔩𝔱 𝔚𝔦𝔱𝔥
 
