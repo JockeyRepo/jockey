@@ -1,0 +1,112 @@
+{
+    "songs": [
+      { 
+          "title": "Sicko Mode",
+          "artist": "Travis Scott",
+          "genre": "Rap",
+          "img": "https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg",
+          "spotify": "2xLMifQCjDGFmkHkpNLD9h",
+          "requests": 10,
+          "time": "Thu Oct 25 2018 09:44:39 GMT-0400 (Eastern Daylight Time)"
+      },
+      {
+          "title": "XO TOUR Llif3",
+          "artist": "Lil Uzi Vert",
+          "genre": "Rap",
+          "img": "https://upload.wikimedia.org/wikipedia/en/6/65/Luv_Is_Rage_2_cover.jpg",
+          "spotify": "7GX5flRQZVHRAGd6B4TmDO",
+          "requests": 69,
+          "time": "Thu Oct 25 2018 09:43:39 GMT-0400 (Eastern Daylight Time)"
+      },
+      {
+          "title": "Ultralight Beam",
+          "artist": "Kanye West",
+          "genre": "Rap",
+          "img": "https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg",
+          "spotify": "2tecGOQrBrYE56iCjzLiXm",
+          "requests": 4,
+          "time": "Thu Oct 25 2018 09:41:39 GMT-0400 (Eastern Daylight Time)"
+      },
+      {
+          "title": "Rubbin Off The Paint",
+          "artist": "YBN Nahmir",
+          "genre": "Mumble",
+          "img": "https://upload.wikimedia.org/wikipedia/en/e/e8/YBNRubbinOffthePaint.jpg",
+          "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
+          "requests": 100,
+          "time": "Thu Oct 25 2018 09:58:39 GMT-0400 (Eastern Daylight Time)"
+      },
+      {
+          "title": "Hell Above",
+          "artist": "Pierce the Veil",
+          "genre": "Rock",
+          "img": "https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg",
+          "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
+          "requests": 12,
+          "time": "Thu Oct 25 2018 09:38:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+          "title": "Hello Kitty",
+          "artist": "Avril Lavigne",
+          "genre": "Pop",
+          "img": "https://i.scdn.co/image/220cd00f9e63e284c45a2af524ff32ebc336b354",
+          "spotify": "40NOI5V57KUAxMhGxXFNXH",
+          "requests": 1,
+          "time": "Thu Oct 25 2018 09:51:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+        "title": "Hello Kitty",
+        "artist": "Avril Lavigne",
+        "genre": "Pop",
+        "img": "https://i.scdn.co/image/220cd00f9e63e284c45a2af524ff32ebc336b354",
+        "spotify": "40NOI5V57KUAxMhGxXFNXH",
+        "requests": 1,
+        "time": "Thu Oct 25 2018 09:51:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+        "title": "Hell Above",
+        "artist": "Pierce the Veil",
+        "genre": "Rock",
+        "img": "https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg",
+        "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
+        "requests": 12,
+        "time": "Thu Oct 25 2018 09:38:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+            "title": "Hello Kitty",
+            "artist": "Avril Lavigne",
+            "genre": "Pop",
+            "img": "https://i.scdn.co/image/220cd00f9e63e284c45a2af524ff32ebc336b354",
+            "spotify": "40NOI5V57KUAxMhGxXFNXH",
+            "requests": 1,
+            "time": "Thu Oct 25 2018 09:51:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+            "title": "Hell Above",
+            "artist": "Pierce the Veil",
+            "genre": "Rock",
+            "img": "https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg",
+            "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
+            "requests": 12,
+            "time": "Thu Oct 25 2018 09:38:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+            "title": "Hello Kitty",
+            "artist": "Avril Lavigne",
+            "genre": "Pop",
+            "img": "https://i.scdn.co/image/220cd00f9e63e284c45a2af524ff32ebc336b354",
+            "spotify": "40NOI5V57KUAxMhGxXFNXH",
+            "requests": 1,
+            "time": "Thu Oct 25 2018 09:51:39 GMT-0400 (Eastern Daylight Time)"
+        },
+        {
+            "title": "Hell Above",
+            "artist": "Pierce the Veil",
+            "genre": "Rock",
+            "img": "https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg",
+            "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
+            "requests": 12,
+            "time": "Thu Oct 25 2018 09:38:39 GMT-0400 (Eastern Daylight Time)"
+        }
+    ]
+}

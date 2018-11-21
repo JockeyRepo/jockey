@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jockey!</title>
+    <!-- Resource Style -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/animsition.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/lightcase.css"> 
+    <link rel="stylesheet" href="css/ionicons.min.css"> 
+    <!-- Resource Style -->
+
+    <script>
+      (function() {
+        if (!process.env.HOT) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './dist/style.css';
+          // HACK: Writing the script path should be done with webpack
+          document.getElementsByTagName('head')[0].appendChild(link);
+        }
+      }());
+    </script>
+  </head>
+  <body style="-webkit-app-region: drag">
+    <div id="title-bar">
+      <div id="left-btns">
+        <a href="#/login"><button id="logout-btn"><i class="fas fa-door-open icons" ></i></button></a>
+        <a href="#/settings"><button  id="settings-btn"><i class="fas fa-cog icons" ></i></button></a>
+      </div>
+      <div id="title-bar-btns">
+        <button id="min-btn"><i class="fa fa-minus icons" ></i></button>
+        <button id="max-btn"><i class="fa fa-expand icons" ></i></button>
+        <button id="close-btn"><i class="fa fa-times icons" ></i></button>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script src="title-bar.js"></script>
+    <script src="popular.js"></script>
+    <script>
+      {
+        const scripts = [];
+
+        // Dynamically insert the DLL script in development env in the
+        // renderer process
+        if (process.env.NODE_ENV === 'development') {
+          scripts.push('../dll/renderer.dev.dll.js');
+        }
+
+        // Dynamically insert the bundled app script in the renderer process
+        const port = process.env.PORT || 1212;
+        scripts.push(
+          (process.env.HOT)
+            ? 'http://localhost:' + port + '/dist/renderer.dev.js'
+            : './dist/renderer.prod.js'
+        );
+
+        document.write(
+          scripts
+            .map(script => `<script defer src="${script}"><\/script>`)
+            .join('')
+        );
+      }
+    </script>
+  </body>
+</html>

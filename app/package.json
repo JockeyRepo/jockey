@@ -1,0 +1,21 @@
+{
+  "name": "jockey",
+  "productName": "jockey",
+  "version": "1.0.0",
+  "description": "seamlessly request music to any event",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "url": "https://github.com/johndoe"
+  },
+  "repository": "https://github.com/spookyvert/jockey",
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "^1.3.0"
+  }
+}
