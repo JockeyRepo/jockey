@@ -13,9 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Programs you needs to run Jockey
 
-```
 * [yarn](https://yarnpkg.com/en/) - Packager
-```
 
 ### 𝔈𝔫𝔱𝔢𝔯𝔦𝔫𝔤 𝔭𝔯𝔬𝔧𝔢𝔠𝔱
 
