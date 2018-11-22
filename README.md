@@ -48,8 +48,8 @@ $ yarn package-all
 
 ## ℭ𝔯𝔢𝔞𝔱𝔬𝔯𝔰 ヽ༼ຈل͜ຈ༽ﾉ
 * **(っ◔◡◔)っ ♥ Shemar Dacosta ♥** - *Project Lead / Frontend Engineer* - [@spookyvert](https://github.com/spookyvert)
-* **≋M≋i≋g≋u≋e≋l≋ ≋A≋c≋e≋r≋o≋** - *Frontend Engineer* - [@spookyvert](https://github.com/AceroM)
-* **K̾e̾v̾i̾n̾ ̾C̾r̾u̾z̾** - *Frontend Engineer / Designs * - [@spookyvert](https://github.com/KevTLW)
+* **≋M≋i≋g≋u≋e≋l≋ ≋A≋c≋e≋r≋o≋** - *Frontend Engineer* - [@AceroM](https://github.com/AceroM)
+* **K̾e̾v̾i̾n̾ ̾C̾r̾u̾z̾** - *Frontend Engineer / Designs * - [@kevtlw](https://github.com/KevTLW)
 * **𝖈𝖍𝖆𝖗** - *Backend Developer* - [@char](https://github.com/char)
 
 ## 𝔏𝔦𝔠𝔢𝔫𝔰𝔢
