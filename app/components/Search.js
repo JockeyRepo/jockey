@@ -76,7 +76,7 @@ class Search extends Component {
         if (!this.state.dragging) {
             return;
         }
-    
+
         console.log("move", e.clientY, "moved by", e.clientY - this.from);
         console.log(`this.max: ${this.max}`)
         console.log(`this.containerInner.current.clientHeight: ${this.containerInner.current.clientHeight}`)
@@ -87,14 +87,14 @@ class Search extends Component {
     };
 
     handleMouseMoveThrottled = throttle(this.handleMouseMove);
-    
+
     handleMouseUp = e => {
         e.preventDefault();
         this.scrollToPosition();
     };
-    
+
     handleMouseUpThrottled = throttle(this.handleMouseUp);
-    
+
     onScroll = e => {
         e.preventDefault();
         clearTimeout(this.wheelTimeout);
@@ -102,9 +102,9 @@ class Search extends Component {
         this.scrollBy(-e.deltaY);
         this.wheelTimeout = setTimeout(() => this.scrollToPosition(), 50);
     };
-    
+
     onScrollThrottled = throttle(this.onScroll);
-    
+
     componentDidMount() {
         this.max = this.containerInner.current.clientHeight - this.container.current.clientHeight + 140;
         document.addEventListener(
@@ -129,13 +129,13 @@ class Search extends Component {
                 <a role="button" onClick={this.toggleCheckbox}>
                     <input
                         type="checkbox"
+                        className="form-checkbox"
                         id="filterNew"
                         checked={this.state.filterNew}
-                        readOnly
                     />
-                    Filter By New
+                    <label for="filterNew">Sort by Most Recent</label>
                 </a>
-                <div className="container" >
+                <div className="container">
                     <div
                         className={`container__inner ${className}`}
                         onMouseDown={this.handleMouseDown}
@@ -143,9 +143,9 @@ class Search extends Component {
                         style={style}
                         ref={this.containerInner}
                     >
-                        
+
                         {
-                            this.state.filterNew ? 
+                            this.state.filterNew ?
                             songs.sort((a,b) => new Date(a.time) - new Date(b.time)).filter(song => `${song.title} ${song.artist} ${song.genre}`.toLowerCase().includes(searchTerm.toLowerCase()))
                             .map((item, i) => <Song key={i} title={item.title} artist={item.artist} genre={item.genre} img={item.img} spotify={item.spotify} requests={item.requests}/>)
                             : songs.sort((a,b) => b.requests-a.requests).filter(song => `${song.title} ${song.artist} ${song.genre}`.toLowerCase().includes(searchTerm.toLowerCase()) )
@@ -154,7 +154,7 @@ class Search extends Component {
                     </div>
                 </div>
             </div>
-            
+
         );
     }
 }

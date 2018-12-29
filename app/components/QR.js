@@ -22,7 +22,7 @@ export default class QR extends Component < Props > {
                                 <h4 class="wow fadeInDown" data-wow-delay="0.4s">Creating a QR Code!</h4>
                                 <p class="wow fadeInDown" data-wow-delay="0.6s"> It's simple.
                                 </p>
-                                <p class="wow fadeInDown" data-wow-delay="0.6s">Put the Name of your event in the title<br class="visible-lg "/> and export your custom QR!
+                                <p class="wow fadeInDown" data-wow-delay="0.6s">Put the name of your event in the title box<br class="visible-lg "/> and export your custom QR code!
                                     <br class="visible-lg"/> </p>
                                 <p class="wow fadeInDown" data-wow-delay="0.6s">Make sure you write down your pin for users, <br class="visible-lg "/> safety first!
                                     <br class="visible-lg"/> </p>
@@ -30,32 +30,32 @@ export default class QR extends Component < Props > {
                                 <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
                             </div>
                         </div>
-                    
+
                 </section>
 
                 <section class="right-section">
                     <div class="intro-right intro">
                         <div class="intro-text">
-                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">Enter the Title of your event!</h4>
+                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">Enter the name of your event!</h4>
                             <div class="wow" data-wow-delay=" 0.6s">
                                 <div class="panel-body">
                                     <div class="searchContainer">
                                     <input
-                                        type="title" 
-                                        id="partyname" 
+                                        type="title"
+                                        id="partyname"
                                         type="text"
                                         placeholder="Title..."
                                     />
-                                    
+
                                     </div>
                                 </div>
                                 <div class="row">
-                                    
+
                                     <img id="qrimg" src="https://orig00.deviantart.net/c5f0/f/2015/066/1/9/qr_code_animated__by_junguler-d8kqfbf.gif" width="250px" height="250px" />
                                     <br/><br/>
                                     <div class="col-sm-12">
                                         <button type="button" onclick="createParty()" class="btn-contact wow fadeInDown" data-wow-delay=".6s">Submit</button>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ export default class QR extends Component < Props > {
                         </div>
                     </div>
                 </section>
-               
+
             </section>
         </div>
     </div>
