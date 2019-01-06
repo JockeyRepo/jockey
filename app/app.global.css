@@ -153,17 +153,79 @@ body {
     left: 50%;
 
 }
-
-#filterNew{
-    font-family: Poppins;
-    text-align:justify !important;
-    font-size: 12px;
-    font-weight: 200;
-    color: #A1A1A1;
-    text-transform: uppercase;
-    line-height: 1.5;
+.form-checkbox {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     color: #4f5b66;
+     height: 20px;
+     width: 20px;
+     border: 0;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-right: 7px;
+     background-color: #212121;
+     outline: none !important;
 }
-
+.form-checkbox:checked::before {
+     position: absolute;
+     font-size: 12.5px;
+     left: 6.75px;
+     top: 2px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-checkbox ~ label {
+    bottom: 5px;
+    position: relative;
+    color: #A1A1A1;
+    display: inline-flex;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+.setting-item .form-checkbox {
+  color: #bbbbbb;
+  background-color: #2f2f2f;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch-btn {
+    width: 60px;
+    height: 20px;
+    background: #e5e5e5;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: inset 0 3px 10px rgba(0,0,0,.3);
+}
+.switch-btn:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: #f2f2f2;
+    left: 0px;
+    top: 50%;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 8px 6px -4px rgba(0,0,0,.25);
+    transform: translateY(-50%);
+}
+.switch-box {
+    opacity: 0;
+}
+.switch-box:checked + .switch-btn {
+    background: #A1A1A1;
+}
+.switch-box:checked + .switch-btn:before {
+    left: 40px;
+}
 #faq-text{
     font-family: sans-serif;
     text-align:justify !important;
@@ -284,10 +346,6 @@ a:hover{
     text-decoration: none;
 
 
-}
-.setting-item p{
-  font-family: sans-serif !important;
-  font-style: italic;
 }
 
 #title {
@@ -429,8 +487,8 @@ ul li:hover .fa-youtube {
 }
 
 /* spotify */
-.wrapper ul li.spotify .spotify-i {
-  color: #1db954;
+.wrapper ul li.spotify .spotify-i, .spotify {
+  color: #1db954 !important;
 }
 
 .wrapper ul li:hover .fa-spotify {
@@ -1254,14 +1312,6 @@ label {
 ------ Homepage Split Layout Styling Starts ---------
 --------------------------------------------------- */
 
-hr {
-
-  border: none;
-  border-left: 1px solid hsla(200, 10%, 50%, 100);
-  height: 100vh;
-  width: 1px;
-}
-
 .left-section {
   background-color: #212121;
   position: absolute;
@@ -1269,8 +1319,8 @@ hr {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
 
@@ -1290,8 +1340,8 @@ hr {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
 
@@ -1311,8 +1361,8 @@ hr {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   overflow-y: auto;
   z-index: 1;
@@ -1341,24 +1391,21 @@ hr {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
 }
 
 .main-logo {
   padding: 150px 0 0 0;
-  animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
   text-align: center;
 }
 
 @keyframes float{
     0%{
         transform:translatey(0px)
-    }
-    25%{
-      transform:translatey(-10px)
     }
     50%{
         transform:translatey(-15px)
@@ -1380,8 +1427,8 @@ hr {
   top: 0;
   bottom: 0;
   padding: 0 40px 0 40px;
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
   background: #252525;
   z-index: 99;
   overflow: hidden;
@@ -1465,21 +1512,62 @@ hr {
   border-color: #FBD68A;
   padding: 10px 20px;
   border-radius: 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
   -webkit-transform: 0.5s;
   -moz-transform: 0.5s;
   transition: 0.5s;
 }
 
-.btn-contact:hover,
-.btn-contact:focus {
+.btn-contact:hover {
   color: #212121;
   background: #FBD68A;
   border-color: #FBD68A;
-
   text-decoration: none;
+}
+.btn-danger {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c9302c;
+  display: inline-block;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid;
+  border-color: #c9302c;
+  padding: 10px 20px;
+  border-radius: 0;
+  -webkit-transform: 0.5s;
+  -moz-transform: 0.5s;
+  transition: 0.5s;
+}
 
+.btn-danger:hover {
+  color: #212121;
+  background: #c9302c;
+  border-color: #c9302c;
+  text-decoration: none;
+}
+.btn-spotify {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1db954;
+  display: inline-block;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid;
+  border-color: #1db954;
+  padding: 10px 20px;
+  border-radius: 0;
+  -webkit-transform: 0.5s;
+  -moz-transform: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-spotify:hover {
+  color: #212121;
+  background: #1db954;
+  border-color: #1db954;
+  text-decoration: none;
 }
 
 
@@ -1509,6 +1597,7 @@ hr {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
+
 .main-button:hover {
   font-family: sans-serif;
   background-color: #facd71;
@@ -1517,6 +1606,7 @@ hr {
   -webkit-box-shadow: 0 4px 0 #f9c14f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 0 #f9c14f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
 }
+
 .main-button:active {
   font-family: sans-serif;
   margin-top: -18px;
@@ -2116,40 +2206,44 @@ label {
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+#username {
+  font: 13px Arial;
+}
 
 .form-control:focus {
   border-color: #FBD68A;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background: transparent;
 }
 
 .form-control::-webkit-input-placeholder {
-  font-family: Work Sans;
+  font-family: Poppins;
   font-size: 13px;
   color: #999;
 }
 
 .form-control:-moz-placeholder {
-  font-family: Work Sans;
+  font-family: Poppins;
   font-size: 13px;
   color: #999;
 }
 
 .form-control::-moz-placeholder {
-  font-family: Work Sans;
+  font-family: Poppins;
   font-size: 13px;
   color: #999;
 }
 
 .form-control:-ms-input-placeholder {
-  font-family: Quicksand;
+  font-family: Poppins;
   font-size: 13px;
   color: #999;
 }
 
 .text-muted {
-  font-family: Work Sans;
+  font-family: Poppins;
   font-size: 13px;
   color: #222;
 }
@@ -2179,6 +2273,11 @@ label {
   background: #000;
   border-color: #111;
   outline: none !important;
+}
+
+.settings-hr {
+  width: 75vw;
+  border: 1px solid #2f2f2f;
 }
 
 /* -------- Contact Section Styling Ends ---- */

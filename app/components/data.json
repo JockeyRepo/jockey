@@ -1,6 +1,6 @@
 {
     "songs": [
-      { 
+      {
           "title": "Sicko Mode",
           "artist": "Travis Scott",
           "genre": "Rap",
@@ -31,7 +31,7 @@
           "title": "Rubbin Off The Paint",
           "artist": "YBN Nahmir",
           "genre": "Mumble",
-          "img": "https://upload.wikimedia.org/wikipedia/en/e/e8/YBNRubbinOffthePaint.jpg",
+          "img": "https://upload.wikimedia.org/wikipedia/en/a/ad/YBN_Nahmir_%E2%80%93_Rubbin_Off_the_Paint.png",
           "spotify": "3H2HxkHvD2D4LbeNyJ4WMy",
           "requests": 100,
           "time": "Thu Oct 25 2018 09:58:39 GMT-0400 (Eastern Daylight Time)"
