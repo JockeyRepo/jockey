@@ -3,17 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Jockey!</title>
-    <!-- Resource Style -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/animsition.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/lightcase.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <!-- Resource Style -->
-
     <script>
       (function() {
         if (!process.env.HOT) {
@@ -26,19 +15,35 @@
       }());
     </script>
   </head>
-  <body style="-webkit-app-region: drag">
-    <div id="title-bar">
-      <div id="left-btns">
-        <a href="#/login"><button id="logout-btn"><i class="fas fa-door-open icons" ></i></button></a>
-        <a href="#/settings"><button  id="settings-btn"><i class="fas fa-cog icons" ></i></button></a>
+  <body>
+    <div id="title-bar" class="row w-100 mx-0 fg-white">
+      <div id="title-bar-left" class="col-6 w-100 px-0">
+        <a href="#/login">
+          <button id="logout-btn">
+            <i class="fas fa-door-open"></i>
+          </button>
+        </a>
+        <a href="#/settings">
+          <button id="settings-btn">
+            <i class="fas fa-cog"></i>
+          </button>
+        </a>
       </div>
-      <div id="title-bar-btns">
-        <button id="min-btn"><i class="fa fa-minus icons" ></i></button>
-        <button id="max-btn"><i class="fa fa-expand icons" ></i></button>
-        <button id="close-btn"><i class="fa fa-times icons" ></i></button>
+      <div id="title-bar-right" class="col-6 w-100 text-right px-0">
+        <button id="min-btn" class="px-2" >
+          <i class="fa fa-minus"></i>
+        </button>
+        <button id="max-btn" class="px-2" >
+          <i class="fa fa-expand"></i>
+        </button>
+        <button id="close-btn" class="px-2" >
+          <i class="fa fa-times"></i>
+        </button>
       </div>
     </div>
+
     <div id="root"></div>
+
     <script src="title-bar.js"></script>
     <script src="popular.js"></script>
     <script>

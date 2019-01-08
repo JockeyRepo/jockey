@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import hunnid from '../assets/images/100.png';
-// var shell = require('electron').shell;
+import {
+  Row,
+  Col,
+  Container
+} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Song extends Component {
     constructor(props) {
@@ -17,31 +21,43 @@ export default class Song extends Component {
     render() {
       let req = this.props.requests;
       return (
-        <div class="song-box btn-2">
-          <div class="song-list">
-            <div class="song">
-              <div class="song-container"><img class="song-cover" src={this.props.img}/>
-                <div class="song-title">
-                  <div class="song-title-name">{this.props.title}</div>
-                  <div class="song-title-meta">{this.props.artist}</div>
-                </div>
-                <div class="song-share">
-                  <div class="table">
-                    <ul id="song-table">
-                      <li class="spotify">
-                        <i class="fab fa-spotify spotify-i" ></i>
-                      </li>
-                      <li class="youtube"><i class="fab fa-youtube youtube-i" ></i></li>
-                      <li id="popular"><i class="fas fa-fire fire-i" ></i></li>
-                      <li id="rate"><span id="rate-text">{req == 100 ? "💯" : req}</span></li>
-                    </ul>
-                    <span class="song-genre"> Genre: {this.props.genre} </span>
-                  </div>
+        <Container className="song font-Roboto mb-2">
+          <Row className="h-100">
+            <Col xs="7" className="bg-song-primary fg-white w-100 p-0">
+              <div className="w-25 h-100 float-left">
+                <img src={this.props.img} className="h-100" />
+              </div>
+
+              <div className="w-75 h-100 float-right d-flex align-items-center justify-content-left">
+                <div className="text-left pl-4">
+                  <p className="font-weight-bold m-0">{this.props.title}</p>
+                  <p className="text-smaller m-0">{this.props.artist}</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        );
+            </Col>
+
+            <Col xs="5" className="bg-song-secondary">
+              <Row className="share d-flex justify-content-center align-items-end text-center mx-auto h-50 my-1">
+                <span className="fg-spotify glow-hover">
+                  <FontAwesomeIcon size="lg" icon={['fab', 'spotify']} />
+                </span>
+                <span className="fg-youtube glow-hover">
+                  <FontAwesomeIcon size="lg" icon={['fab', 'youtube']} />
+                </span>
+                <span className="fg-fire glow">
+                  <FontAwesomeIcon size="lg" icon={'fire'} />
+                </span>
+                <span className="fg-rate text-glow font-weight-600">
+                  {req == 100 ? "💯" : req}
+                </span>
+              </Row>
+
+              <Row className="w-100 h-50 d-flex justify-content-center align-items-end text-center m-auto">
+                <p className="font-Poppins text-tiny text-uppercase font-weight-600 text-spaced">Genre: {this.props.genre}</p>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      );
     }
 };
