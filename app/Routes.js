@@ -1,4 +1,3 @@
-/* eslint flowtype-errors/show-errors: 0 */
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import routes from './constants/routes';
@@ -8,7 +7,6 @@ import LoginPage from './containers/LoginPage';
 import HomePage from './containers/HomePage';
 import QrPage from './containers/QrPage';
 import FaqPage from './containers/FaqPage';
-
 
 export default () => (
   <App>

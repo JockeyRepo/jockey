@@ -2,6 +2,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../constants/routes';
+import {
+  Row,
+  Col,
+  Container,
+  Button
+} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type Props = {};
 
@@ -10,64 +17,70 @@ export default class QR extends Component < Props > {
 
   render() {
     return (
-      <div class="wrapper">
-        <div class="main">
-          <section class="split-home">
-            <section class="left-section wow fadeIn" data-wow-delay="0.2s">
-              <div class="main-logo">
-                <img src="./assets/images/logo.png" width="50%" alt="Logo" class="wow fadeIn" data-wow-delay="0.3s" />
-              </div>
-              <div class="intro">
-                <div class="intro-text">
-                  <h4 class="wow fadeInDown" data-wow-delay="0.4s">Creating a QR Code!</h4>
-                  <p class="wow fadeInDown" data-wow-delay="0.6s"> It's simple.</p>
-                  <p class="wow fadeInDown" data-wow-delay="0.6s">Put the name of your event in the title box
-                    <br class="visible-lg "/>
-                    and export your custom QR code!
-                  </p>
-                  <p class="wow fadeInDown" data-wow-delay="0.6s">
-                    Make sure you write down your pin for users,
-                    <br class="visible-lg "/>
-                    safety first!
-                  </p>
-                  <p class="wow fadeInDown" data-wow-delay="0.6s">We'll do everything else. 🤠</p>
-                  <Link to={routes.HOME} className="btn-contact wow fadeInDown" data-wow-delay="0.6s">Home</Link>
+      <Container fluid={true}>
+        <Row className="vh-100">
+          <Col xs="6" className="fg-light-gray bg-black">
+            <div className="main-logo text-center push-from-top">
+              <img src="./assets/images/logo.png" alt="Logo" className="main-logo w-50 pt-4 justify-content-center" />
+            </div>
+            <div className="py-5 px-5 text-small text-center">
+              <p className="font-weight-600 text-uppercase text-spaced wow fadeInDown">
+                Creating a QR Code!
+              </p>
+              <p>
+                It's simple
+              </p>
+              <p>
+                Put the name of your even in the title box and export your custom QR code!
+              </p>
+              <p>
+                Make sure you write down your pin for users, safety firts
+              </p>
+              <p>
+                We'll do everything else. 🤠
+              </p>
+              <Link to={routes.HOME} className="btn btn-accent">HOME</Link>
+            </div>
+          </Col>
+          <Col xs="6" className="fg-light-gray bg-dark-gray">
+            <div className="text-center push-from-top">
+              <p className="font-weight-600 text-uppercase text-small text-spaced">Enter the name of your event!</p>
+              <div>
+                <div className="input-container my-3">
+                  <span className="input-bar-icon text-small">
+                    <FontAwesomeIcon size="lg" icon={'calendar-day'} />
+                  </span>
+                  <input
+                    id="search"
+                    type="text"
+                    className="input-bar fg-offset bg-black"
+                    placeholder="Event name..."
+                  />
                 </div>
               </div>
-            </section>
-              <section class="right-section">
-                <div class="intro-right intro">
-                  <div class="intro-text">
-                    <h4 class="wow fadeInDown" data-wow-delay="0.4s">Enter the name of your event!</h4>
-                    <div class="wow" data-wow-delay=" 0.6s">
-                      <div class="panel-body">
-                        <div class="searchContainer">
-                          <input
-                            type="title"
-                            id="partyname"
-                            type="text"
-                            placeholder="Title..."
-                          />
-                        </div>
-                      </div>
-                    <div class="row">
-                      <img id="qrimg" className="mx-auto mt-4" src="https://orig00.deviantart.net/c5f0/f/2015/066/1/9/qr_code_animated__by_junguler-d8kqfbf.gif" width="250px" height="250px" />
-                      <div class="col-sm-12 my-4">
-                          <button type="button" onclick="createParty()" class="btn-contact wow fadeInDown" data-wow-delay=".6s">Submit</button>
-                      </div>
-                    </div>
-                  </div>
-                  <span id="social-export">
-                    <a href="#"><i class="fab fa-instagram icons-qr" ></i></a>
-                    <a href="#"><i class="fab fa-facebook icons-qr" ></i></a>
-                    <a href="#"><i class="fab fa-twitter icons-qr" ></i> </a>
+              <Row>
+                <img id="qrimg" className="mx-auto mt-2" src="https://orig00.deviantart.net/c5f0/f/2015/066/1/9/qr_code_animated__by_junguler-d8kqfbf.gif" width="250px" height="250px" />
+                <Col className="col-sm-12 my-4">
+                  <Button className="btn-accent" onClick="createParty()">Submit</Button>
+                </Col>
+              </Row>
+              <Row>
+                <div className="d-flex justify-content-center align-items-end text-center mx-auto h-50 my-1">
+                  <span className="fg-instagram glow-hover mx-3">
+                    <FontAwesomeIcon size="2x" icon={['fab', 'instagram']} />
+                  </span>
+                  <span className="fg-facebook glow-hover mx-3">
+                    <FontAwesomeIcon size="2x" icon={['fab', 'facebook']} />
+                  </span>
+                  <span className="fg-twitter glow-hover mx-3">
+                    <FontAwesomeIcon size="2x" icon={['fab', 'twitter']} />
                   </span>
                 </div>
-              </div>
-            </section>
-          </section>
-        </div>
-      </div>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SearchBar extends Component {
   onSearch = e => {
@@ -9,21 +10,18 @@ class SearchBar extends Component {
   render() {
     const { searchTerm } = this.props;
     return (
-      <div>
-        <div class="searchBox">
-          <div class="searchContainer">
-          <span class="icon-s"><i class="fas fa-search"></i></span>
-            <input
-              type="search"
-              id="search"
-              type="text"
-              className="SearchBar"
-              value={ searchTerm }
-              onChange={this.onSearch}
-            />
-          </div>
+        <div className="input-container my-3">
+          <span className="input-bar-icon text-small">
+            <FontAwesomeIcon size="lg" icon={'search'} />
+          </span>
+          <input
+            id="search"
+            type="text"
+            className="input-bar text-uppercase fg-offset bg-black"
+            value={searchTerm}
+            onChange={this.onSearch}
+          />
         </div>
-      </div>
     );
   }
 }

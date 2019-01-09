@@ -30,15 +30,15 @@ class Search extends Component {
     this.state = {
       totalReqs: 0,
       searchTerm: "",
-      filterNew: true,
+      sortRecent: true,
       scroll: 0,
       dragging: false
     };
   }
 
   toggleCheckbox = checked => {
-    this.setState({ filterNew: !this.state.filterNew });
-    console.log(this.state.filterNew);
+    this.setState({ sortRecent: !this.state.sortRecent });
+    console.log(this.state.sortRecent);
   }
 
   onSearch = searchTerm => {
@@ -124,26 +124,26 @@ class Search extends Component {
       const className = this.state.dragging ? "container__inner--dragging" : "";
 
       return (
-        <div className="App"ref={this.container}>
+        <div className="App" ref={this.container}>
           <SearchBar searchTerm={searchTerm} onSearch={this.onSearch} />
             <input
               type="checkbox"
-              className="form-checkbox"
-              id="filterNew"
+              className="input-checkbox fg-offset bg-black"
+              id="sortRecent"
               onClick={this.toggleCheckbox}
-              checked={this.state.filterNew}
+              checked={this.state.sortRecent}
             />
-            <label for="filterNew">Sort by Most Recent</label>
-          <div className="container">
+          <label htmlFor="sortRecent" className="text-smaller my-2">Sort by Most Recent</label>
+          <div className="scrolling-container">
             <div
-              className={`container__inner ${className}`}
+              className={`scrolling-container-inner ${className}`}
               onMouseDown={this.handleMouseDown}
               onWheel={this.onScrollThrottled}
               style={style}
               ref={this.containerInner}
             >
             {
-              this.state.filterNew ?
+              this.state.sortRecent ?
               songs.sort((a,b) => new Date(a.time) - new Date(b.time)).filter(song => `${song.title} ${song.artist} ${song.genre}`.toLowerCase().includes(searchTerm.toLowerCase()))
               .map((item, i) => <Song key={i} title={item.title} artist={item.artist} genre={item.genre} img={item.img} spotify={item.spotify} requests={item.requests}/>)
               : songs.sort((a,b) => b.requests-a.requests).filter(song => `${song.title} ${song.artist} ${song.genre}`.toLowerCase().includes(searchTerm.toLowerCase()) )
