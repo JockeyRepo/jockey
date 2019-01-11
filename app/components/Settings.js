@@ -58,7 +58,7 @@ export default class Settings extends Component < Props > {
               Filtering settings
             </Col>
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
-              <Link to="/" className="btn btn-white">Modify</Link> {/*TODO: link to blocked list*/}
+              <Link to="/testing" className="btn btn-white">Modify</Link> {/*TODO: link to blocked list*/}
             </Col>
           </Row>
           <hr />
