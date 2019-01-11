@@ -55,10 +55,10 @@ export default class Settings extends Component < Props > {
           </Row>
           <Row className="w-100 mx-auto py-2">
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
-              Filtering settings
+              Filter Settings
             </Col>
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
-              <Link to="/testing" className="btn btn-white">Modify</Link> {/*TODO: link to blocked list*/}
+          <Link to={routes.FILTER} className="btn btn-white">Modify</Link>{/*TODO: link to blocked list*/}
             </Col>
           </Row>
           <hr />

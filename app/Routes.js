@@ -7,10 +7,12 @@ import LoginPage from './containers/LoginPage';
 import HomePage from './containers/HomePage';
 import QrPage from './containers/QrPage';
 import FaqPage from './containers/FaqPage';
+import FilterPage from './containers/FilterPage';
 
 export default () => (
   <App>
     <Switch>
+      <Route path={routes.FILTER} component={FilterPage} />
       <Route path={routes.FAQ} component={FaqPage} />
       <Route path={routes.SETTINGS} component={SettingsPage} />
       <Route path={routes.LOGIN} component={LoginPage} />

@@ -3,5 +3,6 @@
   "LOGIN": "/login",
   "QR": "/qr",
   "FAQ": "/faq",
-  "SETTINGS": "/settings"
+  "SETTINGS": "/settings",
+  "FILTER": "/filter"
 }
