@@ -1,28 +1,34 @@
 // @flow
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
+import React, {
+	Component
+} from 'react';
 import {
-  Row,
-  Col,
-  Container,
-  Button
+	Link
+} from 'react-router-dom';
+import {
+	Row,
+	Col,
+	Container,
+	Button
 } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	FontAwesomeIcon
+} from '@fortawesome/react-fontawesome';
+import routes from '../constants/routes';
 
-type Props = {};
 
-export default class QR extends Component < Props > {
-  props: Props;
 
-  render() {
-    return (
-      <Container fluid={true}>
+export default class QR extends Component {
+
+
+	render() {
+		return (
+			<Container fluid>
         <Row className="vh-100">
           <Col xs="6" className="fg-light-gray bg-black">
-            <div className="main-logo text-center push-from-top">
-              <img src="./assets/images/logo.png" alt="Logo" className="main-logo w-50 pt-4 justify-content-center" />
-            </div>
+						<div className="main-logo text-center push-from-top">
+							Jockey
+						</div>
             <div className="py-5 px-5 text-small text-center">
               <p className="font-weight-600 text-uppercase text-spaced wow fadeInDown">
                 Creating a QR Code!
@@ -48,7 +54,7 @@ export default class QR extends Component < Props > {
               <div>
                 <div className="input-container my-3">
                   <span className="input-bar-icon text-small">
-                    <FontAwesomeIcon size="lg" icon={'calendar-day'} />
+                    <FontAwesomeIcon size="lg" icon="calendar-day" />
                   </span>
                   <input
                     id="search"
@@ -81,6 +87,6 @@ export default class QR extends Component < Props > {
           </Col>
         </Row>
       </Container>
-    );
-  }
+		);
+	}
 }

@@ -1,22 +1,22 @@
 // @flow
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
+import React, {
+	Component
+} from 'react';
 import {
-  Row,
-  Col,
-  Container
+	Link
+} from 'react-router-dom';
+import {
+	Row,
+	Col,
+	Container
 } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type Props = {};
 
-export default class Filter extends Component < Props > {
-  props: Props;
+export default class Filter extends Component {
 
-  render() {
-    return (
-      <Container className="bg-black fg-light-gray" fluid={true}>
+	render() {
+		return (
+			<Container className="bg-black fg-light-gray" fluid>
         <Row className="vh-100">
           <Col className="fg-light-gray bg-black overflow-auto">
             <div className="main-logo text-center push-from-top">
@@ -28,6 +28,6 @@ export default class Filter extends Component < Props > {
           </Col>
         </Row>
       </Container>
-    );
-  }
+		);
+	}
 }

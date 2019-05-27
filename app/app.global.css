@@ -1,6 +1,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto");
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
 :root {
   --black: #212121;
@@ -29,15 +30,16 @@
 /* -------------------------------------------------
 ---------------------- Resets ----------------------
 ---------------------------------------------------- */
-
 body {
   overflow: hidden;
   font-family: Poppins;
 }
+
 a:hover {
   color: inherit;
   text-decoration: none;
 }
+
 input,
 button,
 input:active,
@@ -46,148 +48,190 @@ input:focus,
 button:focus {
   outline: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 .fa:hover, .fab:hover, .fas:hover, svg:hover {
   cursor: pointer;
 }
+
 hr {
   width: 75vw;
   border: 1px solid #2f2f2f;
 }
 
-
 /* -------------------------------------------------
 ---------------------- Colors ----------------------
 ---------------------------------------------------- */
-
 .fg-black {
   color: var(--black);
 }
+
 .bg-black {
   background-color: var(--black);
 }
+
 .fg-dark-gray {
   color: var(--dark-gray);
 }
+
 .bg-dark-gray {
   background-color: var(--dark-gray);
 }
+
 .fg-light-gray {
   color: var(--light-gray);
 }
+
 .bg-light-gray {
   background-color: var(--light-gray);
 }
+
 .fg-white {
   color: var(--white);
 }
+
 .bg-white {
   background-color: var(--white);
 }
+
 .fg-accent {
   color: var(--accent);
 }
+
 .bg-accent {
   background-color: var(--accent);
 }
+
 .fg-offset {
   color: var(--offset);
 }
+
 .bg-offset {
   background-color: var(--offset);
 }
+
 .fg-danger {
   color: var(--danger);
 }
+
 .bg-danger {
   background-color: var(--danger);
 }
+
 .fg-spotify {
   color: var(--spotify);
 }
+
 .bg-spotify {
   background-color: var(--spotify);
 }
+
 .fg-apple-music {
   height: 16px;
   background: var(--apple-music);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .bg-apple-music {
   background-color: var(--apple-music);
 }
+
 .fg-soundcloud {
   color: var(--soundcloud);
 }
+
 .bg-soundcloud {
   background-color: var(--soundcloud);
 }
+
 .fg-youtube {
   color: var(--youtube);
 }
+
 .bg-youtube {
   background-color: var(--youtube);
 }
+
 .fg-facebook {
   color: var(--facebook);
 }
+
 .bg-facebook {
   background-color: var(--facebook);
 }
+
 .fg-twitter {
   color: var(--twitter);
 }
+
 .bg-twitter {
   background-color: var(--twitter);
 }
+
 .fg-instagram {
   color: var(--instagram);
 }
+
 .bg-instagram {
   background-color: var(--instagram);
 }
+
 .fg-fire {
   color: var(--fire);
 }
+
 .bg-fire {
   background-color: var(--fire);
 }
+
 .fg-rate {
   color: var(--rate);
 }
+
 .bg-rate {
   background-color: var(--rate);
 }
+
 .fg-song-primary {
   color: var(--song-primary);
 }
+
 .bg-song-primary {
   background-color: var(--song-primary);
 }
+
 .fg-song-secondary {
   color: var(--song-secondary);
 }
+
 .bg-song-secondary {
   background-color: var(--song-secondary);
 }
+
 .fg-checkbox {
   color: var(--checkbox);
 }
+
 .bg-checkbox {
   background-color: var(--checkbox);
 }
+
 .fg-title-bar {
   color: var(--title-bar);
 }
+
 .bg-title-bar {
   background-color: var(--title-bar);
 }
+
 .fg-dirty-white {
   color: var(--dirty-white);
 }
+
 .bg-dirty-white {
   background-color: var(--dirty-white);
 }
@@ -195,37 +239,46 @@ hr {
 /* -------------------------------------------------
 ---------------------- Fonts -----------------------
 ---------------------------------------------------- */
-
 .font-Poppins {
   font-family: Poppins;
 }
+
 .font-Roboto {
   font-family: Roboto;
 }
+
 .font-weight-400 {
   font-weight: 400;
 }
+
 .font-weight-600 {
   font-weight: 600;
 }
+
 .font-weight-700 {
   font-weight: 700;
 }
+
 .text-small {
   font-size: .875rem;
 }
+
 .text-smaller {
   font-size: .75rem;
 }
+
 .text-tiny {
   font-size: .625rem;
 }
+
 .text-spaced {
   letter-spacing: 2px;
 }
+
 .text-spaced-accent {
   transition: 500ms;
 }
+
 .text-spaced-accent:hover {
   letter-spacing: 2px;
   color: var(--accent);
@@ -234,27 +287,28 @@ hr {
 /* -------------------------------------------------
 ----------------------- Logo -----------------------
 ---------------------------------------------------- */
-
 .main-logo {
-  animation: float 3s ease-in-out infinite;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3em;
 }
 
 @keyframes float {
   0% {
-    transform:translateY(0px)
+    transform: translateY(0px)
   }
+
   50% {
-    transform:translateY(-15px)
+    transform: translateY(-15px)
   }
+
   100% {
-    transform:translateY(0px)
+    transform: translateY(0px)
   }
 }
 
 /* -------------------------------------------------
 ---------------------- Buttons ---------------------
 ---------------------------------------------------- */
-
 .btn {
   border-radius: 0;
   border: 2px solid;
@@ -267,56 +321,68 @@ hr {
   text-transform: uppercase;
   transition: 500ms;
 }
+
 .btn-accent {
   color: var(--accent);
   border-color: var(--accent);
 }
+
 .btn-accent:hover {
   color: var(--black);
   background: var(--accent);
   border-color: var(--accent);
 }
+
 .btn-white {
   color: var(--white);
   border-color: var(--white);
 }
+
 .btn-white:hover {
   color: var(--black);
   background: var(--white);
   border-color: var(--white);
 }
+
 .btn-danger {
   color: var(--danger);
   border-color: var(--danger);
 }
+
 .btn-danger:hover {
   color: var(--black);
   background: var(--danger);
   border-color: var(--danger);
 }
+
 .btn-spotify {
   color: var(--spotify);
   border-color: var(--spotify);
 }
+
 .btn-spotify:hover {
   color: var(--black);
   background: var(--spotify);
   border-color: var(--spotify);
 }
+
 .btn-soundcloud {
   color: var(--soundcloud);
   border-color: var(--soundcloud);
 }
+
 .btn-soundcloud:hover {
   color: var(--white);
   background: var(--soundcloud);
   border-color: var(--soundcloud);
 }
+
 .btn-apple-music {
   color: var(--dirty-white);
   border-image: var(--apple-music);
   border-image-slice: 1;
 }
+
 .btn-apple-music:hover {
   color: var(--black);
   border-image: none;
@@ -327,13 +393,13 @@ hr {
 /* -------------------------------------------------
 ----------------------- Input ----------------------
 ---------------------------------------------------- */
-
 .input-container {
   width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
+
 .input-bar {
   height: 50px;
   width: 300px;
@@ -343,16 +409,19 @@ hr {
   border-radius: 5px;
   padding-left: 3em;
 }
+
 .input-bar::placeholder {
   color: var(--offset);
   text-align: left !important;
 }
+
 .input-bar-icon {
   position: relative;
   left: 2rem;
   z-index: 1;
   color: var(--offset);
 }
+
 .input-line {
   width: 100%;
   border: none;
@@ -360,9 +429,11 @@ hr {
   border-bottom: 1px solid var(--light-gray);
   transition: 500ms;
 }
+
 .input-line:active, .input-line:focus {
   border-bottom: 1px solid var(--accent);
 }
+
 .input-checkbox {
   -webkit-appearance: none;
   display: inline-block;
@@ -374,6 +445,7 @@ hr {
   cursor: pointer;
   outline: none !important;
 }
+
 .input-checkbox:checked::before {
   left: 6.75px;
   position: absolute;
@@ -381,7 +453,8 @@ hr {
   content: '\02143';
   transform: rotate(40deg);
 }
-.input-checkbox ~ label {
+
+.input-checkbox~label {
   bottom: 5px;
   position: relative;
   color: var(--light-gray);
@@ -393,10 +466,10 @@ hr {
 /* -------------------------------------------------
 ------------------- Line Height --------------------
 ---------------------------------------------------- */
-
 .line-height-normal {
   line-height: normal;
 }
+
 .line-height-tall {
   line-height: 2.5;
 }
@@ -404,41 +477,46 @@ hr {
 /* -------------------------------------------------
 ----------------------- Song -----------------------
 ---------------------------------------------------- */
-
 .song {
   width: 100%;
   min-width: 415px;
   max-width: 475px;
   height: 5rem !important;
 }
+
 .song:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition:  200ms ease-out;
+  transition: 200ms ease-out;
   letter-spacing: .5px;
 }
-.share > * {
+
+.share>* {
   padding: 5px;
 }
 
 /* -------------------------------------------------
 ----------------------- Glow -----------------------
 ---------------------------------------------------- */
-
 .text-glow {
   text-shadow: 0 0 20px;
 }
+
 .text-glow-hover {
   transition: 500ms;
 }
+
 .text-glow-hover:hover {
   text-shadow: 0 0 20px;
 }
+
 .glow {
   filter: drop-shadow(0 0 5px);
 }
+
 .glow-hover {
   transition: 500ms;
 }
+
 .glow-hover:hover {
   filter: drop-shadow(0 0 5px);
 }
@@ -446,15 +524,16 @@ hr {
 /* -------------------------------------------------
 ---------------------- Scroll ----------------------
 ---------------------------------------------------- */
-
 .scrolling-container {
   height: 60vh;
   overflow: hidden;
 }
+
 .scrolling-container-inner {
   cursor: -webkit-grab;
   transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .scrolling-container-inner--dragging {
   transition: none;
   user-select: none;
@@ -464,13 +543,13 @@ hr {
 /* -------------------------------------------------
 --------------------- Title bar --------------------
 ---------------------------------------------------- */
-
 #title-bar {
   top: 0;
   z-index: 1;
   position: fixed;
   -webkit-app-region: drag;
 }
+
 #title-bar-left button,
 #title-bar-right button {
   border: none;
@@ -479,6 +558,7 @@ hr {
   -webkit-app-region: no-drag;
   background-color: transparent;
 }
+
 #title-bar-left button:hover,
 #title-bar-right button:hover {
   background-color: var(--title-bar);
@@ -487,15 +567,16 @@ hr {
 /* -------------------------------------------------
 ----------------------- Other ----------------------
 ---------------------------------------------------- */
-
 .push-from-top {
   padding-top: 150px;
 }
+
 .settings-footer {
   position: fixed;
   right: 10px;
   bottom: 10px;
 }
+
 div.col-6.text-center {
   height: 40px;
 }

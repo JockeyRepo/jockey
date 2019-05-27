@@ -1,26 +1,31 @@
 // @flow
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
+import React, {
+	Component
+} from 'react';
 import {
-  Row,
-  Col,
-  Container
+	Link
+} from 'react-router-dom';
+import {
+	Row,
+	Col,
+	Container
 } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	FontAwesomeIcon
+} from '@fortawesome/react-fontawesome';
+import routes from '../constants/routes';
 
 type Props = {};
 
-export default class Faq extends Component < Props > {
-  props: Props;
+export default class Faq extends Component {
 
-  render() {
-    return (
-      <Container className="bg-black fg-light-gray" fluid={true}>
+	render() {
+		return (
+			<Container className="bg-black fg-light-gray" fluid>
         <Row className="vh-100">
           <Col className="fg-light-gray bg-black overflow-auto">
-            <div className="main-logo text-center push-from-top">
-              <img src="./assets/images/logo.png" alt="Logo" width="10%" className="main-logo pt-4 justify-content-center" />
+						<div className="main-logo text-center push-from-top">
+              Jockey
             </div>
             <div className="py-3 px-5 text-small text-center">
               <p className="font-weight-600 text-uppercase text-spaced">
@@ -52,7 +57,7 @@ export default class Faq extends Component < Props > {
               <Link to={routes.SETTINGS} class="fg-light-gray text-center text-uppercase font-weight-600" id="go-back">
                 <span className="text-spaced-accent">
                   <span className="mx-2">
-                    <FontAwesomeIcon icon={'arrow-left'} />
+                    <FontAwesomeIcon icon="arrow-left" />
                   </span>
                   Settings
                 </span>
@@ -61,6 +66,6 @@ export default class Faq extends Component < Props > {
           </Col>
         </Row>
       </Container>
-    );
-  }
+		);
+	}
 }

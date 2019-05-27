@@ -1,33 +1,37 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, {
+	Component
+} from 'react';
+import {
+	Link
+} from 'react-router-dom';
+import {
+	Row,
+	Col,
+	Container
+} from 'reactstrap';
 import routes from '../constants/routes';
 import Search from './Search';
-import {
-  Row,
-  Col,
-  Container
-} from 'reactstrap';
 
-type Props = {};
 
-export default class Home extends Component < Props > {
-  props: Props;
 
-  state = {
-  }
+export default class Home extends Component {
 
-  componentDidMount() {
-    //add fetch stuff here
-  }
 
-  render() {
-    return (
-      <Container fluid={true}>
+	state = {}
+
+	componentDidMount() {
+		// add fetch stuff here
+	}
+
+	render() {
+		return (
+			<Container fluid>
         <Row className="vh-100">
           <Col xs="6" className="fg-light-gray bg-black">
             <div className="main-logo text-center push-from-top">
-              <img src="./assets/images/logo.png" alt="Logo" className="main-logo w-50 pt-4 justify-content-center" />
+              Jockey
             </div>
+            
             <div className="py-5 px-5 text-small text-center">
               <p className="font-weight-600 text-uppercase text-spaced">
                 New to Jockey?
@@ -60,6 +64,6 @@ export default class Home extends Component < Props > {
           </Col>
         </Row>
       </Container>
-    );
-  }
+		);
+	}
 }

@@ -1,23 +1,27 @@
 // @flow
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
+import React, {
+	Component
+} from 'react';
 import {
-  Row,
-  Col,
-  Container,
-  Button
+	Link
+} from 'react-router-dom';
+import {
+	Row,
+	Col,
+	Container,
+	Button
 } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	FontAwesomeIcon
+} from '@fortawesome/react-fontawesome';
+import routes from '../constants/routes';
 
-type Props = {};
 
-export default class Settings extends Component < Props > {
-  props: Props;
+export default class Settings extends Component {
 
-  render() {
-    return (
-      <Container className="bg-black fg-light-gray text-small" fluid={true}>
+	render() {
+		return (
+			<Container className="bg-black fg-light-gray text-small" fluid>
         <Row className="vh-100 overflow-auto">
           <Row className="w-100">
             <Col xs="12" className="fg-light-gray bg-black">
@@ -58,7 +62,7 @@ export default class Settings extends Component < Props > {
               Filter Settings
             </Col>
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
-          <Link to={routes.FILTER} className="btn btn-white">Modify</Link>{/*TODO: link to blocked list*/}
+          <Link to={routes.FILTER} className="btn btn-white">Modify</Link>{/* TODO: link to blocked list */}
             </Col>
           </Row>
           <hr />
@@ -86,7 +90,7 @@ export default class Settings extends Component < Props > {
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
               Connect with
               <span className="ml-1">
-                <i className="fab fa-itunes-note fa-lg fg-apple-music"></i>
+                <i className="fab fa-itunes-note fa-lg fg-apple-music" />
               </span>
             </Col>
             <Col xs="6" className="d-flex align-items-center justify-content-center text-center">
@@ -163,7 +167,7 @@ export default class Settings extends Component < Props > {
             <Link to={routes.HOME} className="fg-light-gray text-uppercase mx-auto font-weight-600 wow fadeInDown" id="go-back">
               <span className="text-spaced-accent">
                 <span className="mx-2">
-                  <FontAwesomeIcon icon={'arrow-left'} />
+                  <FontAwesomeIcon icon="arrow-left" />
                 </span>
                 Main menu
               </span>
@@ -174,6 +178,6 @@ export default class Settings extends Component < Props > {
           </div>
         </Row>
       </Container>
-    );
-  }
+		);
+	}
 }
